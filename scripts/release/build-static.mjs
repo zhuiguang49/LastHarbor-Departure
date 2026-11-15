@@ -21,6 +21,28 @@ export async function filesAt(directory) {
   }))
   return all.flat().sort()
 }
+export function configureCampaignURL(url) {
+  for (const key of ['start','characterLab','infectedLab','infectedSection','legacy','light','aftermath']) url.searchParams.delete(key)
+  url.searchParams.set('entry','campaign-m5-c')
+  url.searchParams.set('play','1')
+  return url
+}
+async function runtimeModules() {
+  const modules = new Map(), pending = [path.join(root,'scripts/harbor/night.mjs')]
+  while (pending.length) {
+    const file = pending.pop()
+    if (modules.has(file)) continue
+    const relative = path.relative(root,file).split(path.sep).join('/')
+    if (!relative.startsWith('scripts/harbor/') && !relative.startsWith('assets/')) throw Error(`Unexpected runtime module: ${relative}`)
+    const code = await fs.readFile(file,'utf8')
+    modules.set(file,code)
+    for (const match of code.matchAll(/(?:from\s*|import\s*\()(['"])([^'"]+)\1/g)) {
+      if (!match[2].startsWith('.')) throw Error(`Unexpected runtime import: ${match[2]}`)
+      pending.push(path.resolve(path.dirname(file),match[2]))
+    }
+  }
+  return modules
+}
 export async function buildStatic(base = '/', output = path.join(root, 'dist')) {
   base = normalizeBase(base)
   if (path.dirname(output) !== root || path.basename(output) !== 'dist') throw Error('Output must be this release project’s dist/')
@@ -28,27 +50,29 @@ export async function buildStatic(base = '/', output = path.join(root, 'dist')) 
   await fs.rm(output, { recursive: true, force: true })
   await fs.mkdir(path.join(output, 'last-harbor-night'), { recursive: true })
   await fs.mkdir(path.join(output, 'local'), { recursive: true })
-  // Preserve gameplay; adapt resource URLs and omit the development cover note.
-  await fs.writeFile(path.join(output, 'last-harbor-night/index.html'), rebase(source, base).replace('<head>', '<head><link rel="icon" href="data:,">'))
-  const names = await fs.readdir(path.join(root, 'scripts/harbor'))
-  for (const name of names.filter(name => name.endsWith('.mjs') && !name.includes('check') && !name.startsWith('convert-') && name !== 'build-night.mjs')) {
-    await fs.writeFile(path.join(output, 'local', name), rebase(await fs.readFile(path.join(root, 'scripts/harbor', name), 'utf8'), base))
+  const policy = `(${configureCampaignURL.toString()})`
+  const bootstrap = `<script>{const u=${policy}(new URL(location.href));history.replaceState(null,'',u)}</script>`
+  await fs.writeFile(path.join(output, 'last-harbor-night/index.html'), rebase(source, base).replace('<head>', '<head><link rel="icon" href="data:,">'+bootstrap))
+  for (const [file,code] of await runtimeModules()) {
+    const relative = path.relative(root,file).split(path.sep).join('/')
+    const destination = relative.startsWith('scripts/harbor/') ? 'local/'+path.basename(file) : relative
+    const target = path.join(output,destination)
+    await fs.mkdir(path.dirname(target),{recursive:true})
+    await fs.writeFile(target,rebase(code,base))
   }
   // Only browser-consumed resources are published. Source GLBs/CAD stay on main for maintenance.
   for (const file of await filesAt(path.join(root, 'assets'))) {
     const relative = path.relative(root, file).split(path.sep).join('/')
-    if (!(/\.(mjs|jpg|ogg)$/.test(file) || /\/(infected\/丧尸|soldier\/soldier|维修柜\/维修柜)\.glb$/.test(relative))) continue
+    if (!(/\.(jpg|ogg)$/.test(file) || /\/(infected\/丧尸|soldier\/soldier|维修柜\/维修柜)\.glb$/.test(relative))) continue
     const target = path.join(output, relative)
     await fs.mkdir(path.dirname(target), { recursive: true })
     await fs.copyFile(file, target)
   }
-  const entries = { '':'campaign-m5-c', campaign:'campaign-m5-c', 'legacy-sandbox':'legacy-sandbox' }
-  for (const entry of ['campaign-m0','campaign-m1','campaign-m2','campaign-m3','campaign-m3-a0','campaign-m3-a1','campaign-m3-a2','campaign-m4-a0','campaign-m4-a1','campaign-m4','campaign-m5-a0','campaign-m5-a1','campaign-m5-b','campaign-m5-c']) entries[entry] = entry
-  for (const [route, entry] of Object.entries(entries)) {
+  for (const route of ['', 'campaign']) {
     const target = path.join(output, route, 'index.html')
     await fs.mkdir(path.dirname(target), { recursive: true })
     const destination = base + 'last-harbor-night/'
-    await fs.writeFile(target, `<!doctype html><meta charset="utf-8"><link rel="icon" href="data:,"><title>Last Harbor: Departure</title><script>const u=new URL(${JSON.stringify(destination)},location.origin);u.search=location.search;u.searchParams.set('entry',${JSON.stringify(entry)});u.searchParams.set('play','1');location.replace(u)</script><a href="${destination}?entry=${entry}&play=1">进入游戏 / Play</a>\n`)
+    await fs.writeFile(target, `<!doctype html><meta charset="utf-8"><link rel="icon" href="data:,"><title>Last Harbor: Departure</title><script>const u=new URL(${JSON.stringify(destination)},location.origin);u.search=location.search;${policy}(u);location.replace(u)</script><a href="${destination}?entry=campaign-m5-c&play=1">进入游戏 / Play</a>\n`)
   }
   await fs.writeFile(path.join(output, '.nojekyll'), '')
   for (const name of ['CREDITS.md','THIRD_PARTY_NOTICES.md']) await fs.copyFile(path.join(root, name), path.join(output, name))
