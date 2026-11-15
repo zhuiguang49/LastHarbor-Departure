@@ -18,7 +18,10 @@
     "test": "node scripts/release/test.mjs",
     "test:release": "node --test scripts/release/*.test.mjs",
     "pages:prepare": "node scripts/release/prepare-pages.mjs",
-    "test:browser": "node scripts/release/browser-smoke.mjs"
+    "test:browser": "node scripts/release/browser-smoke.mjs",
+    "build:pages": "node scripts/harbor/build-night.mjs && node scripts/release/build-static.mjs --mode=custom-domain",
+    "build:pages:project": "node scripts/harbor/build-night.mjs && node scripts/release/build-static.mjs --mode=project",
+    "pages:dry-run": "node scripts/release/prepare-pages.mjs --dry-run"
   },
   "devDependencies": {
     "@babel/parser": "7.29.13",

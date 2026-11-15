@@ -22,6 +22,20 @@ test('static server exposes the formal campaign and returns 404 for retired entr
     })
     const origin=`http://127.0.0.1:${port}${manifest.base}`
     for (const route of ['', 'campaign/', 'last-harbor-night/']) assert.equal((await fetch(origin+route)).status,200,route)
+    for (const [route,mime] of [['local/night.mjs','text/javascript'],['assets/harbor/infected/丧尸.glb','model/gltf-binary']]) {
+      const response=await fetch(origin+route)
+      assert.equal(response.status,200);assert.ok(response.headers.get('content-type').startsWith(mime),route)
+    }
+    for(const extension of ['.jpg','.ogg']) {
+      const file=manifest.files.find(record=>record.path.endsWith(extension))
+      const response=await fetch(origin+file.path)
+      assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),extension==='.jpg' ? 'image/jpeg' : 'audio/ogg')
+    }
+    if(manifest.base!=='/') assert.equal((await fetch(new URL('/',origin))).status,404)
+    if(manifest.mode==='custom-domain') {
+      const response=await fetch(origin+'CNAME')
+      assert.equal(response.status,200);assert.equal(await response.text(),'lastharbor.zhuiguang.tech\n')
+    } else assert.equal((await fetch(origin+'CNAME')).status,404)
     const retired=['legacy-sandbox','campaign-m0','campaign-m1','campaign-m2','campaign-m3','campaign-m3-a0','campaign-m3-a1','campaign-m3-a2',
       'campaign-m4-a0','campaign-m4-a1','campaign-m4','campaign-m5-a0','campaign-m5-a1','campaign-m5-b','campaign-m5-c','character-lab','infected-lab','infected-lab/full']
     for (const route of retired) for (const suffix of ['', '/']) assert.equal((await fetch(origin+route+suffix)).status,404,route+suffix)

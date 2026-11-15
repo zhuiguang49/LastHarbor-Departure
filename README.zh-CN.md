@@ -8,7 +8,7 @@
 
 [![《末港：今夜离港》实机标题画面：暴雨中的集装箱堆场](docs/media/last-harbor-title.jpg)](docs/media/last-harbor-title.png)
 
-**[在线试玩](https://zhuiguang49.github.io/LastHarbor-Departure/)** · [本地运行](#本地运行) · [致谢](CREDITS.md)
+**[在线试玩](https://lastharbor.zhuiguang.tech/)** · [本地运行](#本地运行) · [致谢](CREDITS.md)
 
 *在线试玩：待发布。*
 
@@ -74,14 +74,18 @@ npm start
 
 构建产物位于 `dist/`，预览地址为 **http://127.0.0.1:4181/** ，请通过 HTTP 访问，不要使用 `file://` 直接打开 HTML。
 
-为计划中的 GitHub Pages 项目路径构建：
+为正式自定义域名 `https://lastharbor.zhuiguang.tech/` 构建：
 
 ```sh
-npm run build -- --base=/LastHarbor-Departure/
+npm run build:pages
 npm start
 ```
 
-发布包预览地址为 **http://127.0.0.1:4181/LastHarbor-Departure/campaign/**。使用独立域名并从根路径提供游戏时，使用普通的 `npm run build` 即可。
+预览地址为 **http://127.0.0.1:4181/**。这个发布包使用根路径 `/`，并包含域名配置 `CNAME`。
+
+GitHub Pages 项目路径备用包使用 `npm run build:pages:project` 构建，再运行 `npm start`，访问 **http://127.0.0.1:4181/LastHarbor-Departure/**。这个包使用 `/LastHarbor-Departure/`，不包含 `CNAME`。
+
+维护者可参阅[部署说明](docs/DEPLOYMENT.md)，了解分支准备、GitHub Pages 与 DNS 配置。[源码仓库](https://github.com/zhuiguang49/LastHarbor-Departure)。
 
 ## 操作说明
 

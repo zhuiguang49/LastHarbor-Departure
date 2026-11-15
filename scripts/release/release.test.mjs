@@ -5,13 +5,13 @@ import { createHash } from 'node:crypto'
 import { test } from 'node:test'
 import vm from 'node:vm'
 import { parse } from '@babel/parser'
-import { root, normalizeBase, rebase } from './build-static.mjs'
+import { root, domain, projectBase, normalizeBase, rebase, configuration, validateRelease } from './build-static.mjs'
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex')
 const dist = path.join(root, 'dist')
 
 test('static artifact has verified hashes and resolves every literal browser import under the configured mount', async () => {
-  const manifest = JSON.parse(await fs.readFile(path.join(dist,'release-manifest.json')))
+  const {manifest} = await validateRelease(dist,{checkInputs:true})
   const base = normalizeBase(manifest.base)
   const files = new Set(manifest.files.map(f=>f.path))
   assert.ok(files.has('campaign/index.html'))
@@ -105,4 +105,23 @@ test('formal bootstrap loads all chapter resources with every trial disabled', a
   assert.equal(options.chapter3Resources,chapter3);assert.equal(options.repairResources,repair)
   assert.equal(options.infected.asset,asset);assert.equal(options.infected.bank,bank)
   assert.equal(g.campaignAssets.chapter4,chapter4);assert.equal(warmed,true);assert.equal(started,true)
+})
+
+
+test('deployment configurations keep the root domain and project mount separate', async () => {
+  assert.deepEqual(configuration('custom-domain'),{mode:'custom-domain',base:'/',customDomain:domain})
+  assert.deepEqual(configuration('project'),{mode:'project',base:projectBase,customDomain:null})
+  assert.deepEqual(configuration('local'),{mode:'local',base:'/',customDomain:null})
+  assert.throws(()=>configuration('custom-domain',projectBase),/requires base/)
+  assert.throws(()=>configuration('project','/'),/requires base/)
+  assert.throws(()=>configuration('unknown'),/Unknown build mode/)
+  const {manifest}=await validateRelease(dist)
+  const cname=manifest.files.find(file=>file.path==='CNAME')
+  if(manifest.mode==='custom-domain') {
+    assert.ok(cname)
+    assert.equal(await fs.readFile(path.join(dist,'CNAME'),'utf8'),domain+'\n')
+    for(const file of manifest.files.filter(file=>/\.(mjs|html)$/.test(file.path))) {
+      assert.ok(!(await fs.readFile(path.join(dist,file.path),'utf8')).includes(projectBase),file.path)
+    }
+  } else assert.equal(cname,undefined)
 })

@@ -8,7 +8,7 @@ English | [简体中文](README.zh-CN.md)
 
 [![Last Harbor: Departure — the game's title screen over a rain-soaked container yard](docs/media/last-harbor-title.jpg)](docs/media/last-harbor-title.png)
 
-**[Play Online](https://zhuiguang49.github.io/LastHarbor-Departure/)** · [Run locally](#getting-started) · [Credits](CREDITS.md)
+**[Play Online](https://lastharbor.zhuiguang.tech/)** · [Run locally](#getting-started) · [Credits](CREDITS.md)
 
 *Online demo: release pending.*
 
@@ -74,14 +74,18 @@ npm start
 
 This generates `dist/` and serves it at **http://127.0.0.1:4181/**. Use HTTP rather than opening the HTML with `file://`.
 
-To build for the planned GitHub Pages project path:
+For the custom-domain release at `https://lastharbor.zhuiguang.tech/`:
 
 ```sh
-npm run build -- --base=/LastHarbor-Departure/
+npm run build:pages
 npm start
 ```
 
-Preview that package at **http://127.0.0.1:4181/LastHarbor-Departure/campaign/**. For a custom domain served at its root, use the regular `npm run build` command.
+Preview at **http://127.0.0.1:4181/**. This package uses base `/` and includes the domain's `CNAME`.
+
+For the GitHub Pages project-path fallback, use `npm run build:pages:project`, then `npm start` and open **http://127.0.0.1:4181/LastHarbor-Departure/**. This package uses base `/LastHarbor-Departure/` and has no `CNAME`.
+
+Maintainers: see [Deployment](docs/DEPLOYMENT.md) for branch preparation, GitHub Pages and DNS setup. [Source repository](https://github.com/zhuiguang49/LastHarbor-Departure).
 
 ## Controls
 

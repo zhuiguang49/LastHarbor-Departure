@@ -2,9 +2,10 @@ import http from 'node:http'
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { validateRelease } from './build-static.mjs'
 
 const root = path.resolve(fileURLToPath(new URL('../../dist/', import.meta.url)))
-const manifest = JSON.parse(await fs.readFile(path.join(root, 'release-manifest.json')))
+const {manifest} = await validateRelease(root)
 const base = manifest.base
 const port = Number(process.env.HARBOR_PORT || 4181)
 if (!Number.isInteger(port) || port < 1024 || port > 65535) throw Error('Invalid port')
@@ -23,7 +24,7 @@ http.createServer(async (request,response) => {
       file = path.join(file,'index.html')
     }
     const bytes = await fs.readFile(file)
-    response.writeHead(200,{'Content-Type':mime[path.extname(file)] || 'application/octet-stream','Cache-Control':'no-store'})
+    response.writeHead(200,{'Content-Type':mime[path.extname(file)] || (['CNAME','LICENSE','NOTICE'].includes(path.basename(file)) ? 'text/plain; charset=utf-8' : 'application/octet-stream'),'Cache-Control':'no-store'})
     response.end(request.method === 'HEAD' ? undefined : bytes)
   } catch (error) {
     response.writeHead(error.code === 'ENOENT' ? 404 : 500).end('Static file unavailable')
