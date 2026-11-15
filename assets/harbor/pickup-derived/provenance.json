@@ -1,0 +1,174 @@
+{
+  "converter": {
+    "script": "scripts/harbor/convert-pickup-asset.mjs",
+    "version": "1.0.0",
+    "dependencies": [],
+    "method": "Copy the audited packed Float32 POSITION/NORMAL/TEXCOORD_0 and Uint16 indices verbatim into base64 ESM; extract the embedded JPEG without decoding or re-encoding."
+  },
+  "source": {
+    "path": "assets/harbor/皮卡/皮卡.glb",
+    "sha256": "e4430419e53594ee317b0f3308cc6188aa74091e4975f8657cfcf52d04b4aa8f",
+    "bytes": 1462376,
+    "generator": "Tripo"
+  },
+  "sourceMetadata": {
+    "generator": "Tripo",
+    "version": "2.0",
+    "extras": {
+      "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"91110108MACGQFC964\",\"ProduceID\":\"316191c6-8a0f-4028-8dc3-381105e29d08\",\"ReservedCode1\":\"\",\"ContentPropagator\":\"91110108MACGQFC964\",\"PropagateID\":\"316191c6-8a0f-4028-8dc3-381105e29d08\",\"ReservedCode2\":\"\"}"
+    }
+  },
+  "rights": {
+    "notice": "NOTICE"
+  },
+  "originalBounds": {
+    "min": [
+      -0.218994140625,
+      0,
+      -0.499755859375
+    ],
+    "max": [
+      0.218994140625,
+      0.38037109375,
+      0.499755859375
+    ],
+    "size": [
+      0.43798828125,
+      0.38037109375,
+      0.99951171875
+    ]
+  },
+  "originalNode": {
+    "mesh": 0,
+    "name": "tripo_node_316191c6-8a0f-4028-8dc3-381105e29d08"
+  },
+  "transform": {
+    "up": "+Y",
+    "front": "+Z",
+    "targetLengthMetres": 5.2,
+    "uniformScale": 5.202540302882267,
+    "mapping": "Original source coordinates and origin retained; root.scale.setScalar(uniformScale). No centering, rotation, nonuniform stretch or geometry remodeling.",
+    "boundsMetres": {
+      "min": [
+        -1.1393258426966293,
+        0,
+        -2.6
+      ],
+      "max": [
+        1.1393258426966293,
+        1.9788959452857842,
+        2.6
+      ],
+      "size": [
+        2.2786516853932586,
+        1.9788959452857842,
+        5.2
+      ]
+    }
+  },
+  "material": {
+    "doubleSided": true,
+    "name": "tripo_mat_316191c6-8a0f-4028-8dc3-381105e29d08",
+    "pbrMetallicRoughness": {
+      "baseColorTexture": {
+        "index": 0
+      },
+      "metallicFactor": 0,
+      "roughnessFactor": 0.8999999761581421
+    }
+  },
+  "sampler": {
+    "source": {
+      "magFilter": 9729,
+      "minFilter": 9987
+    },
+    "resolved": {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    "defaults": "glTF omitted wrapS/wrapT resolve to REPEAT (10497).",
+    "flipY": false,
+    "colorSpace": "srgb"
+  },
+  "encoding": "Little-endian original Float32 XYZ positions/normals, Float32 UV, Uint16 indices; no quantization, welding or normal recomputation.",
+  "output": {
+    "module": {
+      "path": "pickup.mesh.mjs",
+      "sha256": "183571925a2c8241d9cd11d4990ba4aab00ba0f0235349212c94bc4a0fa24fc3",
+      "bytes": 445150,
+      "binaryBytes": 333006
+    },
+    "texture": {
+      "path": "pickup-basecolor.jpg",
+      "sha256": "86a08667f76166983446e4b3b74b085ae28e3df9c09545703bd0bcbbd7a19b7f",
+      "bytes": 1127572,
+      "mimeType": "image/jpeg",
+      "width": 2048,
+      "height": 2048
+    },
+    "attributes": [
+      {
+        "name": "position",
+        "type": "VEC3",
+        "componentType": 5126,
+        "itemSize": 3,
+        "count": 8223,
+        "offset": 0,
+        "bytes": 98676,
+        "sha256": "8a868ff5e9ab432a6de9775648d13047557205a79f63ed0da745dd018076681c"
+      },
+      {
+        "name": "normal",
+        "type": "VEC3",
+        "componentType": 5126,
+        "itemSize": 3,
+        "count": 8223,
+        "offset": 98676,
+        "bytes": 98676,
+        "sha256": "9b52ee6bfe4602c3f15c5a5fd7ad5d9bc66292f5afd186984f7472f69c2d21d5"
+      },
+      {
+        "name": "uv",
+        "type": "VEC2",
+        "componentType": 5126,
+        "itemSize": 2,
+        "count": 8223,
+        "offset": 197352,
+        "bytes": 65784,
+        "sha256": "18726d5d4fcabe2bff5790d9b590cf2a503ac23443e0cfeb1e3dfc0eb48bf520"
+      },
+      {
+        "name": "index",
+        "type": "SCALAR",
+        "componentType": 5123,
+        "itemSize": 1,
+        "count": 34935,
+        "offset": 263136,
+        "bytes": 69870,
+        "sha256": "8a0beb19c4b815102f608d124a22753500ca4230683ff63e614e29a503bc35d8"
+      }
+    ],
+    "vertices": 8223,
+    "triangles": 11645
+  },
+  "integration": {
+    "factory": "scripts/harbor/campaign-pickup-asset.mjs",
+    "model": "createPickupModel(g.THREE, pickupTexture)",
+    "texture": "await loadPickupTexture(g.THREE)",
+    "install": "campaign-m2 only: g.campaignAssets = { pickupTexture, createPickupModel } before constructing the environment.",
+    "serve": [
+      "/local/campaign-pickup-asset.mjs",
+      "/assets/harbor/pickup-derived/pickup.mesh.mjs",
+      "/assets/harbor/pickup-derived/pickup-basecolor.jpg"
+    ],
+    "mime": {
+      ".mjs": "text/javascript; charset=utf-8",
+      ".jpg": "image/jpeg"
+    },
+    "ownership": "Each model owns new geometry, buffers and material. Environment disposes these; texture is borrowed from the preloading owner and must not be disposed by the model/environment.",
+    "bounds": "root.userData.bounds is in original source units; root.userData.scale is the uniform metres conversion. Bounds are metadata, not a collision proxy.",
+    "collision": "Not generated. Environment owner fits physical parts after native in-game visual inspection; no enclosing vehicle AABB."
+  }
+}

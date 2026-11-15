@@ -1,0 +1,545 @@
+{
+  "converter": {
+    "name": "occt-import-js",
+    "version": "0.0.23",
+    "project": "https://github.com/kovacsv/occt-import-js",
+    "scriptVersion": "1.0.0",
+    "wasmSha256": "33391fc9d94ea5c869a6718488bf0a9a464222bac9bdc764dfe1690cef281952",
+    "params": {
+      "linearUnit": "millimeter",
+      "linearDeflectionType": "absolute_value",
+      "linearDeflection": 0.12,
+      "angularDeflection": 0.22
+    }
+  },
+  "source": {
+    "path": "assets/harbor/knife/Punhal.STEP",
+    "suppliedPath": "匕首/Punhal.STEP",
+    "sha256": "41de3c79fcc2b43101799250d1b753d8b3bd0f30bb7b1b8a87d925d24aa4a020",
+    "bytes": 1033234,
+    "author": "Sergio",
+    "headerFileName": "Adaga.STEP",
+    "authoredAt": "2016-04-30T14:23:47",
+    "exporter": "SwSTEP 2.0 / SolidWorks 2014",
+    "schema": "STEP AP214 / AUTOMOTIVE_DESIGN",
+    "usage": "CAD source: Sergio. Third-party terms: see NOTICE."
+  },
+  "originalHeader": "ISO-10303-21;\r\nHEADER;\r\nFILE_DESCRIPTION (( 'STEP AP214' ),\r\n    '1' );\r\nFILE_NAME ('Adaga.STEP',\r\n    '2016-04-30T14:23:47',\r\n    ( 'Sergio' ),\r\n    ( '' ),\r\n    'SwSTEP 2.0',\r\n    'SolidWorks 2014',\r\n    '' );\r\nFILE_SCHEMA (( 'AUTOMOTIVE_DESIGN' ));\r\nENDSEC;",
+  "assembly": {
+    "name": "",
+    "meshes": [],
+    "children": [
+      {
+        "name": "Adaga",
+        "meshes": [],
+        "children": [
+          {
+            "name": "Lᬩna",
+            "meshes": [
+              0
+            ],
+            "children": []
+          },
+          {
+            "name": "Empunhadura",
+            "meshes": [
+              1
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "originalUnits": "mm",
+  "originalBounds": {
+    "min": [
+      -25.43757725789584,
+      44.32482885264892,
+      -333.8294788035006
+    ],
+    "max": [
+      25.438428712558196,
+      106.2061748460223,
+      0.3057051545202256
+    ],
+    "size": [
+      50.87600597045403,
+      61.88134599337337,
+      334.13518395802083
+    ]
+  },
+  "transform": {
+    "originInSourceMillimeters": [
+      0,
+      75.91651726226675,
+      -124.6942948450668
+    ],
+    "mapping": "X=(sourceY-originY)*0.001; Y=(-sourceZ+originZ)*0.001; Z=-sourceX*0.001",
+    "determinant": 1,
+    "scale": 0.001
+  },
+  "grip": {
+    "position": [
+      0.003899996401168437,
+      -0.06469429484506681,
+      -0.000004159039815634813
+    ],
+    "sourcePalmStationMillimeters": -60,
+    "sourceSectionMillimeters": {
+      "min": [
+        -16.62207599994072,
+        57.17716238581421,
+        -60
+      ],
+      "max": [
+        16.63039407957199,
+        102.45586494105618,
+        -60
+      ],
+      "size": [
+        33.252470079512705,
+        45.27870255524196,
+        0
+      ]
+    },
+    "method": "Centre of actual handle cross-section at palm station; tang occupies its internal slot."
+  },
+  "bounds": {
+    "min": [
+      -0.03159168840961783,
+      -0.12499999999958704,
+      -0.025438428712558196
+    ],
+    "max": [
+      0.03028965758375554,
+      0.2091351839584338,
+      0.02543757725789584
+    ],
+    "size": [
+      0.061881345993373374,
+      0.33413518395802083,
+      0.05087600597045404
+    ]
+  },
+  "holes": [
+    {
+      "bounds": {
+        "min": [
+          -0.006315330716662913,
+          0.0366091971457982,
+          0.002
+        ],
+        "max": [
+          0.0057259518859598445,
+          0.04994163990883807,
+          0.002
+        ],
+        "size": [
+          0.012041282602622758,
+          0.013332442763039867,
+          0
+        ]
+      },
+      "centre": [
+        -0.00032215434579380543,
+        0.04331646538804667,
+        0.002
+      ],
+      "boundaryVertices": 73
+    },
+    {
+      "bounds": {
+        "min": [
+          -0.007303022229450121,
+          0.0565428114310984,
+          0.002
+        ],
+        "max": [
+          0.005233392492528779,
+          0.07108878873553029,
+          0.002
+        ],
+        "size": [
+          0.0125364147219789,
+          0.014545977304431891,
+          0
+        ]
+      },
+      "centre": [
+        -0.0008037086132776637,
+        0.06368805928309423,
+        0.002
+      ],
+      "boundaryVertices": 80
+    },
+    {
+      "bounds": {
+        "min": [
+          -0.008244833305070514,
+          0.07707592436512631,
+          0.002
+        ],
+        "max": [
+          0.00510854196210903,
+          0.09373126888022332,
+          0.002
+        ],
+        "size": [
+          0.013353375267179543,
+          0.01665534451509701,
+          0
+        ]
+      },
+      "centre": [
+        -0.0013872180439521173,
+        0.08530762854583752,
+        0.002
+      ],
+      "boundaryVertices": 77
+    },
+    {
+      "bounds": {
+        "min": [
+          -0.008507596065369384,
+          0.09878979654977942,
+          0.002
+        ],
+        "max": [
+          0.004767774736740947,
+          0.11544536261180473,
+          0.002
+        ],
+        "size": [
+          0.013275370802110331,
+          0.016655566062025312,
+          0
+        ]
+      },
+      "centre": [
+        -0.0012375458533678057,
+        0.1065295168004314,
+        0.002
+      ],
+      "boundaryVertices": 79
+    }
+  ],
+  "cadFaces": [
+    {
+      "part": 0,
+      "face": 0,
+      "material": "edge",
+      "triangles": 96,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 1,
+      "material": "edge",
+      "triangles": 88,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 2,
+      "material": "edge",
+      "triangles": 90,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 3,
+      "material": "edge",
+      "triangles": 66,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 4,
+      "material": "blade",
+      "triangles": 630,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 5,
+      "material": "blade",
+      "triangles": 630,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 6,
+      "material": "edge",
+      "triangles": 33,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 7,
+      "material": "edge",
+      "triangles": 11,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 8,
+      "material": "edge",
+      "triangles": 127,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 9,
+      "material": "edge",
+      "triangles": 142,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 10,
+      "material": "edge",
+      "triangles": 132,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 11,
+      "material": "edge",
+      "triangles": 122,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 12,
+      "material": "edge",
+      "triangles": 118,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 13,
+      "material": "edge",
+      "triangles": 80,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 14,
+      "material": "edge",
+      "triangles": 70,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 15,
+      "material": "edge",
+      "triangles": 66,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 16,
+      "material": "edge",
+      "triangles": 62,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 17,
+      "material": "edge",
+      "triangles": 114,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 18,
+      "material": "edge",
+      "triangles": 117,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 19,
+      "material": "edge",
+      "triangles": 4,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 20,
+      "material": "edge",
+      "triangles": 113,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 21,
+      "material": "edge",
+      "triangles": 111,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 22,
+      "material": "edge",
+      "triangles": 1,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 23,
+      "material": "edge",
+      "triangles": 1,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 24,
+      "material": "edge",
+      "triangles": 2,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 25,
+      "material": "edge",
+      "triangles": 2,
+      "cadColor": null
+    },
+    {
+      "part": 0,
+      "face": 26,
+      "material": "edge",
+      "triangles": 2,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 0,
+      "material": "handle",
+      "triangles": 1104,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 1,
+      "material": "handle",
+      "triangles": 515,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 2,
+      "material": "handle",
+      "triangles": 4532,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 3,
+      "material": "handle",
+      "triangles": 558,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 4,
+      "material": "handle",
+      "triangles": 4526,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 5,
+      "material": "handle",
+      "triangles": 84,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 6,
+      "material": "handle",
+      "triangles": 525,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 7,
+      "material": "handle",
+      "triangles": 2,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 8,
+      "material": "handle",
+      "triangles": 2,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 9,
+      "material": "handle",
+      "triangles": 2,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 10,
+      "material": "handle",
+      "triangles": 2,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 11,
+      "material": "handle",
+      "triangles": 2,
+      "cadColor": null
+    },
+    {
+      "part": 1,
+      "face": 12,
+      "material": "handle",
+      "triangles": 1014,
+      "cadColor": null
+    }
+  ],
+  "normals": "OCCT analytic surface normals, rotated and SNORM16 encoded. CAD face seams retained; never recomputed across hard edges.",
+  "encoding": "Little-endian Float32 XYZ metres, normalized Int16 XYZ normals, Uint16 triangle indices; 4-byte aligned. Base64 ESM for synchronous construction, no runtime loader.",
+  "output": {
+    "module": "punhal.mesh.mjs",
+    "sha256": "74572fd28ae0965274c367b9058fb04c97ef0a0bd82ae3b43157fcd4239be685",
+    "bytes": 369138,
+    "binaryBytes": 275624,
+    "meshes": [
+      {
+        "name": "step-blade",
+        "vertices": 1248,
+        "triangles": 1260
+      },
+      {
+        "name": "step-edge",
+        "vertices": 1753,
+        "triangles": 1770
+      },
+      {
+        "name": "step-handle",
+        "vertices": 7012,
+        "triangles": 12868
+      }
+    ],
+    "triangles": 15898
+  },
+  "integration": {
+    "factory": "scripts/harbor/knife-asset.mjs",
+    "call": "createKnifeModel(g.THREE)",
+    "rootName": "harbor-duty-knife",
+    "serve": [
+      "/local/knife-asset.mjs",
+      "/assets/harbor/knife/punhal.mesh.mjs"
+    ],
+    "grip": "root.userData.grip is local palm centre in metres; do not centre the model at its bounding box."
+  }
+}

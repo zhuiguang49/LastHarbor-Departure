@@ -1,0 +1,478 @@
+{
+  "converter": {
+    "script": "scripts/harbor/convert-ch4-assets.mjs",
+    "version": "1.0.0",
+    "dependencies": [],
+    "method": "Copy source Float32 POSITION/NORMAL/UV and Uint16 index bytes into ESM base64; extract all embedded JPEGs without re-encoding. Apply transforms only at runtime."
+  },
+  "rights": {
+    "notice": "NOTICE"
+  },
+  "models": {
+    "console": {
+      "source": {
+        "path": "assets/harbor/操控台/操控台.glb",
+        "sha256": "8410c4b1899e786018aae19f6ab4a5bb57fe34cea1208abd776072fd2aff13bc",
+        "bytes": 1005768,
+        "generator": "Tripo"
+      },
+      "sourceMetadata": {
+        "generator": "Tripo",
+        "version": "2.0",
+        "extras": {
+          "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"91110108MACGQFC964\",\"ProduceID\":\"aea0ea03-1df7-4c39-be4c-f2080d89fffa\",\"ReservedCode1\":\"\",\"ContentPropagator\":\"91110108MACGQFC964\",\"PropagateID\":\"aea0ea03-1df7-4c39-be4c-f2080d89fffa\",\"ReservedCode2\":\"\"}"
+        }
+      },
+      "originalNode": {
+        "mesh": 0,
+        "name": "tripo_node_aea0ea03-1df7-4c39-be4c-f2080d89fffa"
+      },
+      "originalBounds": {
+        "min": [
+          -0.4074707329273224,
+          0,
+          -0.2570801079273224
+        ],
+        "max": [
+          0.4074707329273224,
+          0.99951171875,
+          0.2570801079273224
+        ],
+        "size": [
+          0.8149414658546448,
+          0.99951171875,
+          0.5141602158546448
+        ]
+      },
+      "transform": {
+        "scale": [
+          1.500732779677577,
+          1.500732779677577,
+          1.500732779677577
+        ],
+        "yawRadians": 0,
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "up": "+Y",
+        "widthAxis": "+X",
+        "origin": "bottom-center",
+        "method": "Uniform scale to target height; source proportions preserved.",
+        "sourceNodeTranslation": "Source node has no transform; mesh bottom-centered once."
+      },
+      "boundsMetres": {
+        "min": [
+          -0.6115046856632801,
+          0,
+          -0.385808544969582
+        ],
+        "max": [
+          0.6115046856632801,
+          1.5,
+          0.385808544969582
+        ],
+        "size": [
+          1.2230093713265602,
+          1.5,
+          0.771617089939164
+        ]
+      },
+      "material": {
+        "doubleSided": true,
+        "name": "tripo_mat_aea0ea03-1df7-4c39-be4c-f2080d89fffa",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 0.8999999761581421
+        }
+      },
+      "sampler": {
+        "magFilter": 9729,
+        "minFilter": 9987,
+        "wrapS": 10497,
+        "wrapT": 10497,
+        "flipY": false
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "offset": 0,
+          "length": 21972,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 87888,
+          "sha256": "b1244e78acc1458b94da7120cf56f3a5d6c8a7400fd8ae0e21ee599e509d0698"
+        },
+        {
+          "name": "normal",
+          "offset": 87888,
+          "length": 21972,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 87888,
+          "sha256": "3a137427fbd9a5f1d7cd938573bfd86536d07c21b4dfe6cb6fd5f63403ef95aa"
+        },
+        {
+          "name": "uv",
+          "offset": 175776,
+          "length": 14648,
+          "itemSize": 2,
+          "componentType": 5126,
+          "bytes": 58592,
+          "sha256": "0acc0cbf98402ee8c65e48d9a4adc2b029efacb8d55c58d34110fdc3ee2d9ae7"
+        },
+        {
+          "name": "index",
+          "offset": 234368,
+          "length": 32445,
+          "itemSize": 1,
+          "componentType": 5123,
+          "bytes": 64890,
+          "sha256": "caedbad53fbdd84de675cf7547cf504d032494b4eaaec9026e958b7624e24079"
+        }
+      ],
+      "textures": [
+        {
+          "path": "console-basecolor.jpg",
+          "role": "basecolor",
+          "sourceName": "tripo_image_aea0ea03-1df7-4c39-be4c-f2080d89fffa_0_0",
+          "mimeType": "image/jpeg",
+          "bytes": 704694,
+          "sha256": "7d1365e497cbb4413d257a0fcb39a69706395c7c0579471012475553e4792357",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "srgb",
+          "estimatedRGBA8MipBytes": 22369620
+        }
+      ],
+      "cost": {
+        "vertices": 7324,
+        "triangles": 10815,
+        "geometryBytes": 299258,
+        "textureJPEGBytes": 704694,
+        "estimatedRGBA8MipBytes": 22369620,
+        "drawCallsPerInstance": 1
+      }
+    },
+    "server": {
+      "source": {
+        "path": "assets/harbor/服务器/服务器机柜.glb",
+        "sha256": "f77e6901f7009d23a2261b152f52d8457f8f9a93848b4ea7a33a833bf7455e68",
+        "bytes": 1183096,
+        "generator": "Tripo"
+      },
+      "sourceMetadata": {
+        "generator": "Tripo",
+        "version": "2.0",
+        "extras": {
+          "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"91110108MACGQFC964\",\"ProduceID\":\"743b5243-0e3c-4f7f-aaa5-7f00dbe065b2\",\"ReservedCode1\":\"\",\"ContentPropagator\":\"91110108MACGQFC964\",\"PropagateID\":\"743b5243-0e3c-4f7f-aaa5-7f00dbe065b2\",\"ReservedCode2\":\"\"}"
+        }
+      },
+      "originalNode": {
+        "mesh": 0,
+        "name": "tripo_node_743b5243-0e3c-4f7f-aaa5-7f00dbe065b2"
+      },
+      "originalBounds": {
+        "min": [
+          -0.18823248147964478,
+          0,
+          -0.2316894829273224
+        ],
+        "max": [
+          0.18823248147964478,
+          0.99951171875,
+          0.2316894829273224
+        ],
+        "size": [
+          0.37646496295928955,
+          0.99951171875,
+          0.4633789658546448
+        ]
+      },
+      "transform": {
+        "scale": [
+          2.501221299462628,
+          2.501221299462628,
+          2.501221299462628
+        ],
+        "yawRadians": 0,
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "up": "+Y",
+        "widthAxis": "+X",
+        "origin": "bottom-center",
+        "method": "Uniform scale to target height; source proportions preserved.",
+        "sourceNodeTranslation": "Source node has no transform; mesh bottom-centered once."
+      },
+      "boundsMetres": {
+        "min": [
+          -0.4708110919275922,
+          0,
+          -0.5795066695593017
+        ],
+        "max": [
+          0.4708110919275922,
+          2.5,
+          0.5795066695593017
+        ],
+        "size": [
+          0.9416221838551844,
+          2.5,
+          1.1590133391186035
+        ]
+      },
+      "material": {
+        "doubleSided": true,
+        "name": "tripo_mat_743b5243-0e3c-4f7f-aaa5-7f00dbe065b2",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 0.8999999761581421
+        }
+      },
+      "sampler": {
+        "magFilter": 9729,
+        "minFilter": 9987,
+        "wrapS": 10497,
+        "wrapT": 10497,
+        "flipY": false
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "offset": 0,
+          "length": 10851,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 43404,
+          "sha256": "c70e2c6c100c5d384929b5192b82b05eb67d887457ad5bc1b605c7dd33dce922"
+        },
+        {
+          "name": "normal",
+          "offset": 43404,
+          "length": 10851,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 43404,
+          "sha256": "45442f13ed92680392d577dbec0f416413b53004477cfd05e79bc3993739e725"
+        },
+        {
+          "name": "uv",
+          "offset": 86808,
+          "length": 7234,
+          "itemSize": 2,
+          "componentType": 5126,
+          "bytes": 28936,
+          "sha256": "d7d873725351dac4e6798fd5cfd61a91546f9ebcc2eb207c53576b86405bdd2d"
+        },
+        {
+          "name": "index",
+          "offset": 115744,
+          "length": 18291,
+          "itemSize": 1,
+          "componentType": 5123,
+          "bytes": 36582,
+          "sha256": "9a564ed3869d3ce3fcd048b26592907cf4d4034d248f5290e64f44c6a7fef217"
+        }
+      ],
+      "textures": [
+        {
+          "path": "server-basecolor.jpg",
+          "role": "basecolor",
+          "sourceName": "服务器机柜_basecolor",
+          "mimeType": "image/jpeg",
+          "bytes": 1028966,
+          "sha256": "e01a48bb8902d480f6f076ae43da9cf0113e3a54e308f9e43ea1d8d5b1ac2833",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "srgb",
+          "estimatedRGBA8MipBytes": 22369620
+        }
+      ],
+      "cost": {
+        "vertices": 3617,
+        "triangles": 6097,
+        "geometryBytes": 152326,
+        "textureJPEGBytes": 1028966,
+        "estimatedRGBA8MipBytes": 22369620,
+        "drawCallsPerInstance": 1
+      }
+    },
+    "gate": {
+      "source": {
+        "path": "assets/harbor/安全门/安全门.glb",
+        "sha256": "b38600a36628bd49d68f823b890064dea3bcc8e81b198da581c7f5baa98b062b",
+        "bytes": 1230412,
+        "generator": "Tripo"
+      },
+      "sourceMetadata": {
+        "generator": "Tripo",
+        "version": "2.0",
+        "extras": {
+          "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"91110108MACGQFC964\",\"ProduceID\":\"53178ca1-1631-4d4e-a4c1-83598ed2a124\",\"ReservedCode1\":\"\",\"ContentPropagator\":\"91110108MACGQFC964\",\"PropagateID\":\"53178ca1-1631-4d4e-a4c1-83598ed2a124\",\"ReservedCode2\":\"\"}"
+        }
+      },
+      "originalNode": {
+        "mesh": 0,
+        "name": "tripo_node_53178ca1-1631-4d4e-a4c1-83598ed2a124"
+      },
+      "originalBounds": {
+        "min": [
+          -0.419189453125,
+          0,
+          -0.1037597507238388
+        ],
+        "max": [
+          0.419189453125,
+          0.99951171875,
+          0.1037597507238388
+        ],
+        "size": [
+          0.83837890625,
+          0.99951171875,
+          0.2075195014476776
+        ]
+      },
+      "transform": {
+        "scale": [
+          5.002442598925256,
+          5.002442598925256,
+          5.002442598925256
+        ],
+        "yawRadians": 0,
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "up": "+Y",
+        "widthAxis": "+X",
+        "origin": "bottom-center",
+        "method": "Uniform scale to target height; source proportions preserved.",
+        "sourceNodeTranslation": "Source node has no transform; mesh bottom-centered once."
+      },
+      "boundsMetres": {
+        "min": [
+          -2.096971177332682,
+          0,
+          -0.519052197074797
+        ],
+        "max": [
+          2.096971177332682,
+          5,
+          0.519052197074797
+        ],
+        "size": [
+          4.193942354665364,
+          5,
+          1.038104394149594
+        ]
+      },
+      "material": {
+        "doubleSided": true,
+        "name": "tripo_mat_53178ca1-1631-4d4e-a4c1-83598ed2a124",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 0.8999999761581421
+        }
+      },
+      "sampler": {
+        "magFilter": 9729,
+        "minFilter": 9987,
+        "wrapS": 10497,
+        "wrapT": 10497,
+        "flipY": false
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "offset": 0,
+          "length": 21063,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 84252,
+          "sha256": "32e00773206ef6d2e7e9863128c59822166c628e01f5a34c2005c20afca3b4cf"
+        },
+        {
+          "name": "normal",
+          "offset": 84252,
+          "length": 21063,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 84252,
+          "sha256": "84918338f153e6612666461516ffef9ce48320d112a2f1e91105e6bbdb840da9"
+        },
+        {
+          "name": "uv",
+          "offset": 168504,
+          "length": 14042,
+          "itemSize": 2,
+          "componentType": 5126,
+          "bytes": 56168,
+          "sha256": "85a1f748d73560927428a22200cb06e56e6a8e61c7a7c7c4ee0260d53b7761bf"
+        },
+        {
+          "name": "index",
+          "offset": 224672,
+          "length": 30195,
+          "itemSize": 1,
+          "componentType": 5123,
+          "bytes": 60390,
+          "sha256": "0ec3134167f1c20e32f5f7b966be72dd7ebfe0bce0e4d941b14cb38c8416c2c7"
+        }
+      ],
+      "textures": [
+        {
+          "path": "gate-basecolor.jpg",
+          "role": "basecolor",
+          "sourceName": "tripo_image_53178ca1-1631-4d4e-a4c1-83598ed2a124_0_0",
+          "mimeType": "image/jpeg",
+          "bytes": 943544,
+          "sha256": "a8639b24335bd523e291afdf6e491ed6bcd29e4580317818d3acdca0a0fc2667",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "srgb",
+          "estimatedRGBA8MipBytes": 22369620
+        }
+      ],
+      "cost": {
+        "vertices": 7021,
+        "triangles": 10065,
+        "geometryBytes": 285062,
+        "textureJPEGBytes": 943544,
+        "estimatedRGBA8MipBytes": 22369620,
+        "drawCallsPerInstance": 1
+      }
+    }
+  },
+  "outputs": {
+    "console-basecolor.jpg": {
+      "bytes": 704694,
+      "sha256": "7d1365e497cbb4413d257a0fcb39a69706395c7c0579471012475553e4792357"
+    },
+    "server-basecolor.jpg": {
+      "bytes": 1028966,
+      "sha256": "e01a48bb8902d480f6f076ae43da9cf0113e3a54e308f9e43ea1d8d5b1ac2833"
+    },
+    "gate-basecolor.jpg": {
+      "bytes": 943544,
+      "sha256": "a8639b24335bd523e291afdf6e491ed6bcd29e4580317818d3acdca0a0fc2667"
+    },
+    "ch4.mesh.mjs": {
+      "bytes": 987014,
+      "sha256": "b630afa3e541e777539bf5bfa837f6a89d6b8c9c7a59eba4bcbaad2a93e06f9e"
+    }
+  }
+}

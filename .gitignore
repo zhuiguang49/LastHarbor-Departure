@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.local/
+artifacts/
+test-results/
+playwright-report/
+.DS_Store
+*.log
+*.tsbuildinfo
+
+# Original gameplay capture; the compressed showcase lives in docs/media/.
+/LastHarbor.mp4

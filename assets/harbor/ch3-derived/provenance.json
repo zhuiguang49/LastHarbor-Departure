@@ -1,0 +1,791 @@
+{
+  "converter": {
+    "script": "scripts/harbor/convert-ch3-assets.mjs",
+    "version": "1.0.0",
+    "dependencies": [],
+    "method": "Copy source Float32 POSITION/NORMAL/UV and Uint16 index bytes into ESM base64; extract all embedded JPEGs without re-encoding. Apply transforms only at runtime."
+  },
+  "rights": {
+    "notice": "NOTICE"
+  },
+  "models": {
+    "cover": {
+      "source": {
+        "path": "assets/harbor/掩体/掩体.glb",
+        "sha256": "1a39f4c25934a18a9e46c95d86121b1ac04131cb24361492e8070fc2ad8569f2",
+        "bytes": 1501236,
+        "generator": "Tripo"
+      },
+      "sourceMetadata": {
+        "generator": "Tripo",
+        "version": "2.0",
+        "extras": {
+          "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"91110108MACGQFC964\",\"ProduceID\":\"cd12940f-f832-4309-87db-bbb987461f78\",\"ReservedCode1\":\"\",\"ContentPropagator\":\"91110108MACGQFC964\",\"PropagateID\":\"cd12940f-f832-4309-87db-bbb987461f78\",\"ReservedCode2\":\"\"}"
+        }
+      },
+      "originalNode": {
+        "mesh": 0,
+        "name": "tripo_node_cd12940f-f832-4309-87db-bbb987461f78",
+        "translation": [
+          -0.00028987228870391846,
+          0,
+          -0.006179824471473694
+        ]
+      },
+      "originalBounds": {
+        "min": [
+          -0.4857330918312073,
+          0,
+          -0.4645844101905823
+        ],
+        "max": [
+          0.4857330918312073,
+          0.65093994140625,
+          0.4645844101905823
+        ],
+        "size": [
+          0.9714661836624146,
+          0.65093994140625,
+          0.9291688203811646
+        ]
+      },
+      "transform": {
+        "scale": [
+          4.117487635977254,
+          2.150736052508204,
+          4.117487635977254
+        ],
+        "yawRadians": 0,
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "up": "+Y",
+        "widthAxis": "+X",
+        "origin": "bottom-center",
+        "method": "XZ uniformly scaled to 4m width; Y independently scaled to 1.4m height.",
+        "sourceNodeTranslation": "Recorded but removed by bottom-centering; no source transform is applied twice."
+      },
+      "boundsMetres": {
+        "min": [
+          -2,
+          0,
+          -1.9129205648275074
+        ],
+        "max": [
+          2,
+          1.4,
+          1.9129205648275074
+        ],
+        "size": [
+          4,
+          1.4,
+          3.8258411296550148
+        ]
+      },
+      "material": {
+        "name": "tripo_mat_cd12940f-f832-4309-87db-bbb987461f78",
+        "normalTexture": {
+          "index": 0
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicRoughnessTexture": {
+            "index": 2
+          }
+        }
+      },
+      "sampler": {
+        "magFilter": 9729,
+        "minFilter": 9987,
+        "wrapS": 10497,
+        "wrapT": 10497,
+        "flipY": false
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "offset": 0,
+          "length": 11007,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 44028,
+          "sha256": "2d982f538b0c1419c6105c9740cc0c43acf01b4db5f1304c1b0ef06ec494088d"
+        },
+        {
+          "name": "normal",
+          "offset": 44028,
+          "length": 11007,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 44028,
+          "sha256": "3c966d755327324a554de3f4aba36d303b44757bcc59820c7226dc956c85c386"
+        },
+        {
+          "name": "uv",
+          "offset": 88056,
+          "length": 7338,
+          "itemSize": 2,
+          "componentType": 5126,
+          "bytes": 29352,
+          "sha256": "9098abcf57a9424aefae575984fb8f584565727425704c16d5e6f2f65abdeef0"
+        },
+        {
+          "name": "index",
+          "offset": 117408,
+          "length": 11886,
+          "itemSize": 1,
+          "componentType": 5123,
+          "bytes": 23772,
+          "sha256": "d19510784726f15ac76c6c737e60c16991c0f87bdc461bf5c364bb2224cf1043"
+        }
+      ],
+      "textures": [
+        {
+          "path": "cover-normal.jpg",
+          "role": "normal",
+          "sourceName": "掩体_normal",
+          "mimeType": "image/jpeg",
+          "bytes": 173384,
+          "sha256": "cf647a951e788ef1ac877d3e9f482fb6210c9e534e8fa78be13d2e7841535a9e",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "linear",
+          "estimatedRGBA8MipBytes": 22369620
+        },
+        {
+          "path": "cover-basecolor.jpg",
+          "role": "basecolor",
+          "sourceName": "掩体_basecolor",
+          "mimeType": "image/jpeg",
+          "bytes": 675767,
+          "sha256": "c2afa2042739577c862e238bebad187f65b187918527d2251ded39b3ab873fe9",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "srgb",
+          "estimatedRGBA8MipBytes": 22369620
+        },
+        {
+          "path": "cover-metallic-roughness.jpg",
+          "role": "metallic-roughness",
+          "sourceName": "掩体_rm",
+          "mimeType": "image/jpeg",
+          "bytes": 508770,
+          "sha256": "da45fd847bf1381c741b14c1ba1f9424539801ba37375f4ab0773e10c39033c7",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "linear",
+          "estimatedRGBA8MipBytes": 22369620
+        }
+      ],
+      "cost": {
+        "vertices": 3669,
+        "triangles": 3962,
+        "geometryBytes": 141180,
+        "textureJPEGBytes": 1357921,
+        "estimatedRGBA8MipBytes": 67108860,
+        "drawCallsPerInstance": 1
+      }
+    },
+    "workbench": {
+      "source": {
+        "path": "assets/harbor/许工维修工作台/许工维修工作台.glb",
+        "sha256": "f851f84ced9ae84b71b8cd47da39204cd1142f9ac171ebbe4800bbafdd3bf316",
+        "bytes": 1890984,
+        "generator": "Tripo"
+      },
+      "sourceMetadata": {
+        "generator": "Tripo",
+        "version": "2.0",
+        "extras": {
+          "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"91110108MACGQFC964\",\"ProduceID\":\"67b11767-8f62-445a-b0f0-f811a5f23f9e\",\"ReservedCode1\":\"\",\"ContentPropagator\":\"91110108MACGQFC964\",\"PropagateID\":\"67b11767-8f62-445a-b0f0-f811a5f23f9e\",\"ReservedCode2\":\"\"}"
+        }
+      },
+      "originalNode": {
+        "mesh": 0,
+        "name": "tripo_node_67b11767-8f62-445a-b0f0-f811a5f23f9e",
+        "translation": [
+          0.00035093724727630615,
+          0,
+          0.00035099685192108154
+        ]
+      },
+      "originalBounds": {
+        "min": [
+          -0.5003204941749573,
+          0,
+          -0.2658538818359375
+        ],
+        "max": [
+          0.5003204941749573,
+          0.85235595703125,
+          0.2658538818359375
+        ],
+        "size": [
+          1.0006409883499146,
+          0.85235595703125,
+          0.531707763671875
+        ]
+      },
+      "transform": {
+        "scale": [
+          2.1985907289565088,
+          2.1985907289565088,
+          2.1985907289565088
+        ],
+        "yawRadians": 0,
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "up": "+Y",
+        "widthAxis": "+X",
+        "origin": "bottom-center",
+        "method": "Uniform scale to target width; sign yaw +90 degrees so source Z width becomes X.",
+        "sourceNodeTranslation": "Recorded but removed by bottom-centering; no source transform is applied twice."
+      },
+      "boundsMetres": {
+        "min": [
+          -1.1,
+          0,
+          -0.5845038798615914
+        ],
+        "max": [
+          1.1,
+          1.8739819048997586,
+          0.5845038798615914
+        ],
+        "size": [
+          2.2,
+          1.8739819048997586,
+          1.1690077597231827
+        ]
+      },
+      "material": {
+        "name": "tripo_mat_67b11767-8f62-445a-b0f0-f811a5f23f9e",
+        "normalTexture": {
+          "index": 0
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicRoughnessTexture": {
+            "index": 2
+          }
+        }
+      },
+      "sampler": {
+        "magFilter": 9729,
+        "minFilter": 9987,
+        "wrapS": 10497,
+        "wrapT": 10497,
+        "flipY": false
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "offset": 0,
+          "length": 16917,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 67668,
+          "sha256": "c136e4a7b563339c8cc04d698dad977241bac08501e2490a7045d24e3965f666"
+        },
+        {
+          "name": "normal",
+          "offset": 67668,
+          "length": 16917,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 67668,
+          "sha256": "f37fad3b23bfec5cc12575f787bb8e24c731dc3ad3fedf2db72f3cb1bce3ba73"
+        },
+        {
+          "name": "uv",
+          "offset": 135336,
+          "length": 11278,
+          "itemSize": 2,
+          "componentType": 5126,
+          "bytes": 45112,
+          "sha256": "fe744e7c3af96c4557d0523651ba3abe0af8e6fbaf6ec5ec26ed8547d69b8875"
+        },
+        {
+          "name": "index",
+          "offset": 180448,
+          "length": 17871,
+          "itemSize": 1,
+          "componentType": 5123,
+          "bytes": 35742,
+          "sha256": "2e0cca2377df3675c654bf755f03428c1fab7c488f583dca759a6b5fbda83856"
+        }
+      ],
+      "textures": [
+        {
+          "path": "workbench-normal.jpg",
+          "role": "normal",
+          "sourceName": "许工维修工作台_normal",
+          "mimeType": "image/jpeg",
+          "bytes": 205928,
+          "sha256": "f84fc04022dce584823eb3c75f18cd625ecf6863e943c33b18336e4e2c025209",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "linear",
+          "estimatedRGBA8MipBytes": 22369620
+        },
+        {
+          "path": "workbench-basecolor.jpg",
+          "role": "basecolor",
+          "sourceName": "许工维修工作台_basecolor",
+          "mimeType": "image/jpeg",
+          "bytes": 726987,
+          "sha256": "08cad2f69ec7da759e3b5c35d22183707fc0bcbcd50135e9fc562841b986d1fd",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "srgb",
+          "estimatedRGBA8MipBytes": 22369620
+        },
+        {
+          "path": "workbench-metallic-roughness.jpg",
+          "role": "metallic-roughness",
+          "sourceName": "许工维修工作台_rm",
+          "mimeType": "image/jpeg",
+          "bytes": 739651,
+          "sha256": "6b13768b22ad6d0a86263ee14d3c6613b9242d37900755cdfef35c69bb1c3ad0",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "linear",
+          "estimatedRGBA8MipBytes": 22369620
+        }
+      ],
+      "cost": {
+        "vertices": 5639,
+        "triangles": 5957,
+        "geometryBytes": 216190,
+        "textureJPEGBytes": 1672566,
+        "estimatedRGBA8MipBytes": 67108860,
+        "drawCallsPerInstance": 1
+      }
+    },
+    "observation": {
+      "source": {
+        "path": "assets/harbor/狙击瞭望台/狙击瞭望台.glb",
+        "sha256": "585e3fb5632b02bae42df32fa6b9163cfed7b4f8c0c81c3414b9b8882db90493",
+        "bytes": 1697732,
+        "generator": "Tripo"
+      },
+      "sourceMetadata": {
+        "generator": "Tripo",
+        "version": "2.0",
+        "extras": {
+          "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"91110108MACGQFC964\",\"ProduceID\":\"0605c4ca-1235-4dc2-a27f-32aaba408724\",\"ReservedCode1\":\"\",\"ContentPropagator\":\"91110108MACGQFC964\",\"PropagateID\":\"0605c4ca-1235-4dc2-a27f-32aaba408724\",\"ReservedCode2\":\"\"}"
+        }
+      },
+      "originalNode": {
+        "mesh": 0,
+        "name": "tripo_node_0605c4ca-1235-4dc2-a27f-32aaba408724",
+        "translation": [
+          -0.001007080078125,
+          0,
+          0.0016632080078125
+        ]
+      },
+      "originalBounds": {
+        "min": [
+          -0.5010071396827698,
+          0,
+          -0.4939423203468323
+        ],
+        "max": [
+          0.5010071396827698,
+          0.87652587890625,
+          0.4939423203468323
+        ],
+        "size": [
+          1.0020142793655396,
+          0.87652587890625,
+          0.9878846406936646
+        ]
+      },
+      "transform": {
+        "scale": [
+          2.9939693093990187,
+          2.9939693093990187,
+          2.9939693093990187
+        ],
+        "yawRadians": 0,
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "up": "+Y",
+        "widthAxis": "+X",
+        "origin": "bottom-center",
+        "method": "Uniform scale to target width; sign yaw +90 degrees so source Z width becomes X.",
+        "sourceNodeTranslation": "Recorded but removed by bottom-centering; no source transform is applied twice."
+      },
+      "boundsMetres": {
+        "min": [
+          -1.5,
+          0,
+          -1.4788481477317543
+        ],
+        "max": [
+          1.5,
+          2.6242915803393134,
+          1.4788481477317543
+        ],
+        "size": [
+          3,
+          2.6242915803393134,
+          2.9576962954635087
+        ]
+      },
+      "material": {
+        "name": "tripo_mat_0605c4ca-1235-4dc2-a27f-32aaba408724",
+        "normalTexture": {
+          "index": 0
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicRoughnessTexture": {
+            "index": 2
+          }
+        }
+      },
+      "sampler": {
+        "magFilter": 9729,
+        "minFilter": 9987,
+        "wrapS": 10497,
+        "wrapT": 10497,
+        "flipY": false
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "offset": 0,
+          "length": 10761,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 43044,
+          "sha256": "f8dbbec0d2b9be1ee96b00e4cd1f438cd3378ade7e895f40930af89c63e55d23"
+        },
+        {
+          "name": "normal",
+          "offset": 43044,
+          "length": 10761,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 43044,
+          "sha256": "6f5717bf1c14efcfb0739b5fbdde10e997c0c83bca8c9fad509597d7e53bbe58"
+        },
+        {
+          "name": "uv",
+          "offset": 86088,
+          "length": 7174,
+          "itemSize": 2,
+          "componentType": 5126,
+          "bytes": 28696,
+          "sha256": "4089687d00b6db9cfe31d24291e4d155ed93bb0fa5b392cbfd1d41cbaddce894"
+        },
+        {
+          "name": "index",
+          "offset": 114784,
+          "length": 11901,
+          "itemSize": 1,
+          "componentType": 5123,
+          "bytes": 23802,
+          "sha256": "560475b8ff8923051797dc943f6131709a834e679dc6aaf58239cd0ded7ece93"
+        }
+      ],
+      "textures": [
+        {
+          "path": "observation-normal.jpg",
+          "role": "normal",
+          "sourceName": "狙击瞭望台_normal",
+          "mimeType": "image/jpeg",
+          "bytes": 236380,
+          "sha256": "7853eb606c211bbb98c6e0729b9c78c83368e8f28650c323a0ed1335388c1b0c",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "linear",
+          "estimatedRGBA8MipBytes": 22369620
+        },
+        {
+          "path": "observation-basecolor.jpg",
+          "role": "basecolor",
+          "sourceName": "狙击瞭望台_basecolor",
+          "mimeType": "image/jpeg",
+          "bytes": 745325,
+          "sha256": "b086de01f1a39d542883205e98cf6c1ba1c5df11f9f9a001ae3c8bf41ee9ac73",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "srgb",
+          "estimatedRGBA8MipBytes": 22369620
+        },
+        {
+          "path": "observation-metallic-roughness.jpg",
+          "role": "metallic-roughness",
+          "sourceName": "狙击瞭望台_rm",
+          "mimeType": "image/jpeg",
+          "bytes": 575254,
+          "sha256": "5c3b3fbb90c64b0d7fc606332ce82e306b424c0232fe364ebb06d8b04a410b16",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "linear",
+          "estimatedRGBA8MipBytes": 22369620
+        }
+      ],
+      "cost": {
+        "vertices": 3587,
+        "triangles": 3967,
+        "geometryBytes": 138586,
+        "textureJPEGBytes": 1556959,
+        "estimatedRGBA8MipBytes": 67108860,
+        "drawCallsPerInstance": 1
+      }
+    },
+    "sign": {
+      "source": {
+        "path": "assets/harbor/封锁告示牌/封锁告示牌.glb",
+        "sha256": "5f755aa3e668e07bc1069e32647e5191501a125a9f906f06ce4b124820fbec38",
+        "bytes": 2171072,
+        "generator": "Tripo"
+      },
+      "sourceMetadata": {
+        "generator": "Tripo",
+        "version": "2.0",
+        "extras": {
+          "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"91110108MACGQFC964\",\"ProduceID\":\"5f0f4771-560d-4af9-b5a3-520d1c673dd6\",\"ReservedCode1\":\"\",\"ContentPropagator\":\"91110108MACGQFC964\",\"PropagateID\":\"5f0f4771-560d-4af9-b5a3-520d1c673dd6\",\"ReservedCode2\":\"\"}"
+        }
+      },
+      "originalNode": {
+        "mesh": 0,
+        "name": "tripo_node_5f0f4771-560d-4af9-b5a3-520d1c673dd6",
+        "translation": [
+          -0.00028603896498680115,
+          0,
+          0.000091552734375
+        ]
+      },
+      "originalBounds": {
+        "min": [
+          -0.09263229370117188,
+          0,
+          -0.4998169541358948
+        ],
+        "max": [
+          0.09263229370117188,
+          0.89349365234375,
+          0.4998169541358948
+        ],
+        "size": [
+          0.18526458740234375,
+          0.89349365234375,
+          0.9996339082717896
+        ]
+      },
+      "transform": {
+        "scale": [
+          1.5005493387006699,
+          1.5005493387006699,
+          1.5005493387006699
+        ],
+        "yawRadians": 1.5707963267948966,
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "up": "+Y",
+        "widthAxis": "+X",
+        "origin": "bottom-center",
+        "method": "Uniform scale to target width; sign yaw +90 degrees so source Z width becomes X.",
+        "sourceNodeTranslation": "Recorded but removed by bottom-centering; no source transform is applied twice."
+      },
+      "boundsMetres": {
+        "min": [
+          -0.75,
+          0,
+          -0.13899932705561968
+        ],
+        "max": [
+          0.75,
+          1.3407313091576603,
+          0.13899932705561968
+        ],
+        "size": [
+          1.5,
+          1.3407313091576603,
+          0.27799865411123936
+        ]
+      },
+      "material": {
+        "name": "tripo_mat_5f0f4771-560d-4af9-b5a3-520d1c673dd6",
+        "normalTexture": {
+          "index": 0
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicRoughnessTexture": {
+            "index": 2
+          }
+        }
+      },
+      "sampler": {
+        "magFilter": 9729,
+        "minFilter": 9987,
+        "wrapS": 10497,
+        "wrapT": 10497,
+        "flipY": false
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "offset": 0,
+          "length": 13698,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 54792,
+          "sha256": "9968fa8666c455e3520a21f6eed4a71bade00dcc0c9193957ed8baacb44394f3"
+        },
+        {
+          "name": "normal",
+          "offset": 54792,
+          "length": 13698,
+          "itemSize": 3,
+          "componentType": 5126,
+          "bytes": 54792,
+          "sha256": "250548482b40a10ae22e7cef4f0b4398ede346dc53c62e6ab1b29efd390da167"
+        },
+        {
+          "name": "uv",
+          "offset": 109584,
+          "length": 9132,
+          "itemSize": 2,
+          "componentType": 5126,
+          "bytes": 36528,
+          "sha256": "8988094fd586a9df2082fe0c0ceb869dc3bd1428e4f63ca3681c33ff1d0eb2d1"
+        },
+        {
+          "name": "index",
+          "offset": 146112,
+          "length": 11910,
+          "itemSize": 1,
+          "componentType": 5123,
+          "bytes": 23820,
+          "sha256": "e567ace92c784d09d4fd5e71182a3d05bfeeecd9302a3069f1dcf5e72021e56c"
+        }
+      ],
+      "textures": [
+        {
+          "path": "sign-normal.jpg",
+          "role": "normal",
+          "sourceName": "封锁告示牌_normal",
+          "mimeType": "image/jpeg",
+          "bytes": 277280,
+          "sha256": "116252dad8c487ab9c8bbd9084ea8566d84c4a293d8f3ea837b516313347df22",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "linear",
+          "estimatedRGBA8MipBytes": 22369620
+        },
+        {
+          "path": "sign-basecolor.jpg",
+          "role": "basecolor",
+          "sourceName": "封锁告示牌_basecolor",
+          "mimeType": "image/jpeg",
+          "bytes": 977805,
+          "sha256": "5e2aeec81b2eb3d5ee5d949e35bc08f65f4a820d7a52f001a3f1ad572d5f6e08",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "srgb",
+          "estimatedRGBA8MipBytes": 22369620
+        },
+        {
+          "path": "sign-metallic-roughness.jpg",
+          "role": "metallic-roughness",
+          "sourceName": "封锁告示牌_rm",
+          "mimeType": "image/jpeg",
+          "bytes": 743865,
+          "sha256": "87e99e7d45b12aff29e04547ce074aa9617ef5190e069ee231f8b5a70f1b6676",
+          "width": 2048,
+          "height": 2048,
+          "colorSpace": "linear",
+          "estimatedRGBA8MipBytes": 22369620
+        }
+      ],
+      "cost": {
+        "vertices": 4566,
+        "triangles": 3970,
+        "geometryBytes": 169932,
+        "textureJPEGBytes": 1998950,
+        "estimatedRGBA8MipBytes": 67108860,
+        "drawCallsPerInstance": 1
+      }
+    }
+  },
+  "outputs": {
+    "cover-normal.jpg": {
+      "bytes": 173384,
+      "sha256": "cf647a951e788ef1ac877d3e9f482fb6210c9e534e8fa78be13d2e7841535a9e"
+    },
+    "cover-basecolor.jpg": {
+      "bytes": 675767,
+      "sha256": "c2afa2042739577c862e238bebad187f65b187918527d2251ded39b3ab873fe9"
+    },
+    "cover-metallic-roughness.jpg": {
+      "bytes": 508770,
+      "sha256": "da45fd847bf1381c741b14c1ba1f9424539801ba37375f4ab0773e10c39033c7"
+    },
+    "workbench-normal.jpg": {
+      "bytes": 205928,
+      "sha256": "f84fc04022dce584823eb3c75f18cd625ecf6863e943c33b18336e4e2c025209"
+    },
+    "workbench-basecolor.jpg": {
+      "bytes": 726987,
+      "sha256": "08cad2f69ec7da759e3b5c35d22183707fc0bcbcd50135e9fc562841b986d1fd"
+    },
+    "workbench-metallic-roughness.jpg": {
+      "bytes": 739651,
+      "sha256": "6b13768b22ad6d0a86263ee14d3c6613b9242d37900755cdfef35c69bb1c3ad0"
+    },
+    "observation-normal.jpg": {
+      "bytes": 236380,
+      "sha256": "7853eb606c211bbb98c6e0729b9c78c83368e8f28650c323a0ed1335388c1b0c"
+    },
+    "observation-basecolor.jpg": {
+      "bytes": 745325,
+      "sha256": "b086de01f1a39d542883205e98cf6c1ba1c5df11f9f9a001ae3c8bf41ee9ac73"
+    },
+    "observation-metallic-roughness.jpg": {
+      "bytes": 575254,
+      "sha256": "5c3b3fbb90c64b0d7fc606332ce82e306b424c0232fe364ebb06d8b04a410b16"
+    },
+    "sign-normal.jpg": {
+      "bytes": 277280,
+      "sha256": "116252dad8c487ab9c8bbd9084ea8566d84c4a293d8f3ea837b516313347df22"
+    },
+    "sign-basecolor.jpg": {
+      "bytes": 977805,
+      "sha256": "5e2aeec81b2eb3d5ee5d949e35bc08f65f4a820d7a52f001a3f1ad572d5f6e08"
+    },
+    "sign-metallic-roughness.jpg": {
+      "bytes": 743865,
+      "sha256": "87e99e7d45b12aff29e04547ce074aa9617ef5190e069ee231f8b5a70f1b6676"
+    },
+    "ch3.mesh.mjs": {
+      "bytes": 896609,
+      "sha256": "b109c83b78180f3454f75ffb4fbe35be89a8b563564b27264b705f26ac9f432d"
+    }
+  }
+}

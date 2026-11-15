@@ -1,0 +1,43 @@
+Required Notice: Last Harbor: Departure / 末港：今夜离港 — https://github.com/zhuiguang49/LastHarbor-Departure
+
+License scope
+=============
+
+The PolyForm Noncommercial License 1.0.0 in LICENSE is offered only for
+original LastHarbor contributions, to the extent their rights holders are
+entitled to license them. These include project-authored campaign additions,
+original narrative and documentation, and original procedural assets.
+It does not relicense inherited or third-party portions of any file.
+
+Excluded from this offer are Saltline and its underlying game technology,
+the supplied Chinese localization, supplied GLB/STEP/audio assets, and
+third-party libraries, icons and other separately sourced materials.
+Their applicable rights, licenses and notices remain separate. No permission
+for those materials is inferred from this project's license or credits.
+Three.js retains its MIT notice in THIRD_PARTY_NOTICES.md.
+
+Covered contributions may be used, modified and redistributed for the
+purposes permitted by LICENSE. Redistributors must preserve the Required
+Notice above, the license or its URL, and applicable third-party notices.
+Commercial use outside the license requires separate permission. Relevant
+rights holders reserve the right to pursue remedies for violations under
+the license and applicable law.
+
+中文说明
+========
+
+LICENSE 中的 PolyForm Noncommercial 1.0.0 仅适用于本项目有权授权的
+原创新增内容，包括新增战役逻辑、原创剧情与文档及原创程序化资产。
+它不重新授权任何文件中继承或使用的第三方内容。
+
+Saltline 及其游戏技术基础、所提供的汉化版本、GLB/STEP/音频等外部
+资产，以及第三方库与图标，均不适用本项目新增内容的许可声明；
+这些内容继续遵循其各自权利与条款，未知的授权不因本项目许可而补足。
+
+在许可允许的非商业用途内可修改和再发布覆盖内容，但必须保留上方
+Required Notice 中的项目名称与仓库地址、许可或许可地址，以及适用
+的第三方声明。超出许可的商业使用需另行取得许可。相关权利人保留
+依据许可和适用法律追究违规行为法律责任的权利。
+
+非商用限制意味着本项目属于源码可见项目，不属于 OSI 定义的开源许可。
+本说明界定本项目的授权范围；具体许可条款以 LICENSE 原文为准。

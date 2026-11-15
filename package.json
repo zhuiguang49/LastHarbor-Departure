@@ -1,0 +1,27 @@
+{
+  "name": "lastharbor-departure",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Last Harbor: Departure — a five-chapter first-person escape through a stormbound harbor.",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhuiguang49/LastHarbor-Departure.git"
+  },
+  "scripts": {
+    "dev": "npm run build && node scripts/release/serve.mjs",
+    "start": "node scripts/release/serve.mjs",
+    "build": "node scripts/harbor/build-night.mjs && node scripts/release/build-static.mjs",
+    "test": "node scripts/release/test.mjs",
+    "test:release": "node --test scripts/release/*.test.mjs",
+    "pages:prepare": "node scripts/release/prepare-pages.mjs",
+    "test:browser": "node scripts/release/browser-smoke.mjs"
+  },
+  "devDependencies": {
+    "@babel/parser": "7.29.13",
+    "@playwright/test": "1.65.0"
+  }
+}

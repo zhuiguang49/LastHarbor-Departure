@@ -1,0 +1,148 @@
+{
+  "sources": {
+    "rifle": {
+      "source": {
+        "path": "assets/harbor/guns/突击步枪.glb",
+        "bytes": 986900,
+        "sha256": "4c424341cfca6bbc16a8e0815985802d0d10cd5252c59f5d91502a5798781067"
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "bytes": 66252,
+          "sha256": "0cebadad50af8901cfbd2816edc58ed5f597218bd9585d1287758e5c150fcea5"
+        },
+        {
+          "name": "normal",
+          "bytes": 66252,
+          "sha256": "b56b94119305e5b7077672f2e154fa3b88cb206ba8236c1a311e4349d04a314c"
+        },
+        {
+          "name": "uv",
+          "bytes": 44168,
+          "sha256": "55021840983ff4fafdbf20603727d506438ea1ccb5c896eb31c1b142978d29cb"
+        },
+        {
+          "name": "index",
+          "bytes": 37500,
+          "sha256": "55a28863db130f7164b311a054136f5ecff368bf1c1e29dde83a9fa0d833b5aa"
+        }
+      ],
+      "textures": [
+        {
+          "path": "rifle-basecolor.jpg",
+          "bytes": 770931,
+          "sha256": "19fe5abab724b270dbf4194ca5aabc3eef60f7817b96bbc115062178ec30202c",
+          "width": 2048,
+          "height": 2048
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.06274418532848358,
+          0,
+          -0.4997559189796448
+        ],
+        "max": [
+          0.06274418532848358,
+          0.40673828125,
+          0.4997559189796448
+        ]
+      }
+    },
+    "worker": {
+      "source": {
+        "path": "assets/harbor/worker/许工.glb",
+        "bytes": 3987896,
+        "sha256": "69be592918cf0944799593f09e249f05a4fe4a125498d27371a488b5b70a6722"
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "bytes": 266124,
+          "sha256": "70f17fa187d4b336fb6046b1dbd8617276c33fe8b0a5b060f0ef8d0aa423a149"
+        },
+        {
+          "name": "normal",
+          "bytes": 266124,
+          "sha256": "cbe6c33380650d76cb0d6e97f20661465c3f35db0cec43a8a68226ffe7e717fa"
+        },
+        {
+          "name": "uv",
+          "bytes": 177416,
+          "sha256": "94dbf379392341b60f67fe278ff19dc44ccb2ca9154138ae8abcd87a7a52933f"
+        },
+        {
+          "name": "index",
+          "bytes": 217566,
+          "sha256": "4e6e2c6cddd7cae300edcad3db05c4a52578679a9105810a1feb2bdcbfa48679"
+        }
+      ],
+      "textures": [
+        {
+          "path": "worker-normal.jpg",
+          "bytes": 572672,
+          "sha256": "0ef2adf7c45a3e9523f2017983874496dd69ddf78fbd8208de5d207da3187142",
+          "width": 2048,
+          "height": 2048
+        },
+        {
+          "path": "worker-basecolor.jpg",
+          "bytes": 1315735,
+          "sha256": "44322fe37092d3f4e6e8d5dcea049ae969a8d63fa2ce955da14a4a4409193c91",
+          "width": 2048,
+          "height": 2048
+        },
+        {
+          "path": "worker-rm.jpg",
+          "bytes": 704823,
+          "sha256": "bcac07b3a0496bd2ce0c7717070c792e5cd6d6141a22e50243052fe4b26015c6",
+          "width": 2048,
+          "height": 2048
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.3186037838459015,
+          3.625559941156098e-8,
+          -0.1037597507238388
+        ],
+        "max": [
+          0.3186034560203552,
+          0.9995116591453552,
+          0.103759765625
+        ]
+      }
+    }
+  },
+  "method": "Exact Float32 POSITION/NORMAL/UV and Uint16 index extraction; original embedded JPEGs, no re-encoding. Worker keeps static bind pose; skin is not animated.",
+  "rights": {
+    "notice": "NOTICE"
+  },
+  "outputs": {
+    "rifle-basecolor.jpg": {
+      "bytes": 770931,
+      "sha256": "19fe5abab724b270dbf4194ca5aabc3eef60f7817b96bbc115062178ec30202c"
+    },
+    "rifle.mesh.mjs": {
+      "bytes": 287041,
+      "sha256": "8ee0f63715b1976404034f503de45ef45105e2fd9ad2a35623b58a4d4b675894"
+    },
+    "worker-normal.jpg": {
+      "bytes": 572672,
+      "sha256": "0ef2adf7c45a3e9523f2017983874496dd69ddf78fbd8208de5d207da3187142"
+    },
+    "worker-basecolor.jpg": {
+      "bytes": 1315735,
+      "sha256": "44322fe37092d3f4e6e8d5dcea049ae969a8d63fa2ce955da14a4a4409193c91"
+    },
+    "worker-rm.jpg": {
+      "bytes": 704823,
+      "sha256": "bcac07b3a0496bd2ce0c7717070c792e5cd6d6141a22e50243052fe4b26015c6"
+    },
+    "worker.mesh.mjs": {
+      "bytes": 1238042,
+      "sha256": "0239b0f692b583dd7309b0c2e66db89e14ab17f81b9c29b5462201c90bb04569"
+    }
+  }
+}

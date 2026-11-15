@@ -1,0 +1,50 @@
+{
+  "source": {
+    "path": "assets/harbor/guns/狙击枪.glb",
+    "bytes": 996020,
+    "sha256": "ef340b6ea23d66b1be5a1f6a6bb5d7c11f4347ece1fc530fce699cbc415a2aa3"
+  },
+  "attributes": [
+    {
+      "name": "position",
+      "bytes": 59892,
+      "sha256": "eaf1b751534e506a8057bbd5fd44509de186d55e39a79eddad178bb7967f7064"
+    },
+    {
+      "name": "normal",
+      "bytes": 59892,
+      "sha256": "2518b9c94b647c709d2f0489bcf9058c0323db6bcb4067761ab5412a63461ce6"
+    },
+    {
+      "name": "uv",
+      "bytes": 39928,
+      "sha256": "8ec30f6de42d3776f9fcfb7ef94f5cf58d3e1a0dc492b3a51adbb3ef0e202c8d"
+    },
+    {
+      "name": "index",
+      "bytes": 38034,
+      "sha256": "04d44b6dcef0f04723c001a323ea09b24904092833c913d2ae8f3a7f5ef244e0"
+    }
+  ],
+  "texture": {
+    "path": "sniper-basecolor.jpg",
+    "bytes": 796491,
+    "sha256": "be5d7dbd4fd50c474d045bdbdfd7b11e6c02aac47a441b8d46ad0fcbaea9d34f",
+    "width": 2048,
+    "height": 2048
+  },
+  "method": "Exact packed Float32 POSITION/NORMAL/UV and Uint16 indices; embedded JPEG copied without re-encoding. Uniform 1.25m length at runtime.",
+  "rights": {
+    "notice": "NOTICE"
+  },
+  "outputs": {
+    "sniper-basecolor.jpg": {
+      "bytes": 796491,
+      "sha256": "be5d7dbd4fd50c474d045bdbdfd7b11e6c02aac47a441b8d46ad0fcbaea9d34f"
+    },
+    "sniper.mesh.mjs": {
+      "bytes": 265179,
+      "sha256": "915c2f5b78365eba1ced8d51a39defd8fcb9e5b0a7a3a30b5fff9561e8c0bf77"
+    }
+  }
+}
