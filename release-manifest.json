@@ -1,0 +1,1541 @@
+{
+  "schema": 2,
+  "mode": "custom-domain",
+  "base": "/",
+  "customDomain": "lastharbor.zhuiguang.tech",
+  "entry": "campaign-m5-c",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CNAME",
+      "bytes": 26,
+      "sha256": "93cf144d864004b86ab3c48ee31b1f5f6879c7d152ba51d497c803c95d6ae1ef"
+    },
+    {
+      "path": "CREDITS.md",
+      "bytes": 4313,
+      "sha256": "3f730e53152be26e0bb967cf8459db54ab925b80d8b7e52fc36f8bc8ab0ebf08"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 4563,
+      "sha256": "ffcca38841adb694b6f380647e15f17c446a4d1656fed51a1e2041d064c94cc8"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 2420,
+      "sha256": "0f568271b5571a43f7492f203afd4977e4fa98077566fcb73e0376c7d9297f57"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1566,
+      "sha256": "1fea51aff15a7a84de0423467910ae6c396c68cc87413728683d5bcc49ebbf6c"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Alert/Alert1.ogg",
+      "bytes": 16449,
+      "sha256": "113a4596a5cedde74f110a580eb0877d9c6affd3f668ce8020d57908a64d729f"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Alert/Alert2.ogg",
+      "bytes": 16816,
+      "sha256": "ff65ef6003d6738754cbfcd110a917a0728b03f5fa221e365a135c8ade2fef41"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Alert/Alert3.ogg",
+      "bytes": 16138,
+      "sha256": "2aa3d5d609f97cca985227b3944d875f76d7731243c0309f11ce0ff707fd943b"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Alert/Alert4.ogg",
+      "bytes": 17862,
+      "sha256": "5852063cb893a5a4c41fb21ee2778371e1189cb9884e00d60976ff7aa1f4929b"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Attack/Attack1.ogg",
+      "bytes": 16991,
+      "sha256": "df90eddaa12f180db40fa9bd9e49f227953b7a67cbee2137d64d8ca85f75ce90"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Attack/Attack2.ogg",
+      "bytes": 16402,
+      "sha256": "a1dc0a125d39e7f431123c0f458cc9f5e2defa23d6fc7b3efdb7430f3f14c38d"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Attack/Attack3.ogg",
+      "bytes": 15190,
+      "sha256": "387c22abe79d815954500ca805ad720fa05a746c30ecbf89c1fca83a25201a96"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Attack/Attack4.ogg",
+      "bytes": 16839,
+      "sha256": "b7683ed717e5c9eef9f2d6378b2510085a4ba9488f0fe06d44f1240459700ec2"
+    },
+    {
+      "path": "assets/harbor/audio/infected/chase/chase1.ogg",
+      "bytes": 56679,
+      "sha256": "83ba88536edd710276d4dd8fda9f7e22983711bfa284566da218de93006cacb9"
+    },
+    {
+      "path": "assets/harbor/audio/infected/chase/chase2.ogg",
+      "bytes": 56763,
+      "sha256": "7a80e329b54a9fc79358fb5593b6b0a7226f76b2ef488542a5bbf0f25e8c9f0f"
+    },
+    {
+      "path": "assets/harbor/audio/infected/chase/chase3.ogg",
+      "bytes": 57032,
+      "sha256": "797f1cdbe59e3d68e91f6fea1972a0aadb740ce04e5099b8d8dec73d089dec05"
+    },
+    {
+      "path": "assets/harbor/audio/infected/chase/chase4.ogg",
+      "bytes": 56918,
+      "sha256": "89b8c567f216de9520fda108a936bdfcbe525c4813e50a4c69a5524ae2ca69f3"
+    },
+    {
+      "path": "assets/harbor/audio/infected/idle/idle1.ogg",
+      "bytes": 80175,
+      "sha256": "a90f970a030145faa83e8ca3f0df5597ee4a13652ede18560068084804e7221b"
+    },
+    {
+      "path": "assets/harbor/audio/infected/idle/idle2.ogg",
+      "bytes": 79193,
+      "sha256": "46a4d6045fea2c5eb253dbd3fcf1590db1f1e5a866d3fb93c7429c7e95a34df2"
+    },
+    {
+      "path": "assets/harbor/audio/infected/idle/idle3.ogg",
+      "bytes": 78661,
+      "sha256": "473b8e26697d6d413e3096b825c3b58c4955fa4f2f5b868d75d6a6eadc44bec1"
+    },
+    {
+      "path": "assets/harbor/audio/infected/idle/idle4.ogg",
+      "bytes": 74425,
+      "sha256": "a6049357693f9ba2b131b76d9dd19e02fb7ed25d122d29dfb7fcadd0c09d9b84"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/ch3.mesh.mjs",
+      "bytes": 896609,
+      "sha256": "b109c83b78180f3454f75ffb4fbe35be89a8b563564b27264b705f26ac9f432d"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/cover-basecolor.jpg",
+      "bytes": 675767,
+      "sha256": "c2afa2042739577c862e238bebad187f65b187918527d2251ded39b3ab873fe9"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/cover-metallic-roughness.jpg",
+      "bytes": 508770,
+      "sha256": "da45fd847bf1381c741b14c1ba1f9424539801ba37375f4ab0773e10c39033c7"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/cover-normal.jpg",
+      "bytes": 173384,
+      "sha256": "cf647a951e788ef1ac877d3e9f482fb6210c9e534e8fa78be13d2e7841535a9e"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/observation-basecolor.jpg",
+      "bytes": 745325,
+      "sha256": "b086de01f1a39d542883205e98cf6c1ba1c5df11f9f9a001ae3c8bf41ee9ac73"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/observation-metallic-roughness.jpg",
+      "bytes": 575254,
+      "sha256": "5c3b3fbb90c64b0d7fc606332ce82e306b424c0232fe364ebb06d8b04a410b16"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/observation-normal.jpg",
+      "bytes": 236380,
+      "sha256": "7853eb606c211bbb98c6e0729b9c78c83368e8f28650c323a0ed1335388c1b0c"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/sign-basecolor.jpg",
+      "bytes": 977805,
+      "sha256": "5e2aeec81b2eb3d5ee5d949e35bc08f65f4a820d7a52f001a3f1ad572d5f6e08"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/sign-metallic-roughness.jpg",
+      "bytes": 743865,
+      "sha256": "87e99e7d45b12aff29e04547ce074aa9617ef5190e069ee231f8b5a70f1b6676"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/sign-normal.jpg",
+      "bytes": 277280,
+      "sha256": "116252dad8c487ab9c8bbd9084ea8566d84c4a293d8f3ea837b516313347df22"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/workbench-basecolor.jpg",
+      "bytes": 726987,
+      "sha256": "08cad2f69ec7da759e3b5c35d22183707fc0bcbcd50135e9fc562841b986d1fd"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/workbench-metallic-roughness.jpg",
+      "bytes": 739651,
+      "sha256": "6b13768b22ad6d0a86263ee14d3c6613b9242d37900755cdfef35c69bb1c3ad0"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/workbench-normal.jpg",
+      "bytes": 205928,
+      "sha256": "f84fc04022dce584823eb3c75f18cd625ecf6863e943c33b18336e4e2c025209"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/rifle-basecolor.jpg",
+      "bytes": 770931,
+      "sha256": "19fe5abab724b270dbf4194ca5aabc3eef60f7817b96bbc115062178ec30202c"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/rifle.mesh.mjs",
+      "bytes": 287041,
+      "sha256": "8ee0f63715b1976404034f503de45ef45105e2fd9ad2a35623b58a4d4b675894"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/worker-basecolor.jpg",
+      "bytes": 1315735,
+      "sha256": "44322fe37092d3f4e6e8d5dcea049ae969a8d63fa2ce955da14a4a4409193c91"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/worker-normal.jpg",
+      "bytes": 572672,
+      "sha256": "0ef2adf7c45a3e9523f2017983874496dd69ddf78fbd8208de5d207da3187142"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/worker-rm.jpg",
+      "bytes": 704823,
+      "sha256": "bcac07b3a0496bd2ce0c7717070c792e5cd6d6141a22e50243052fe4b26015c6"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/worker.mesh.mjs",
+      "bytes": 1238042,
+      "sha256": "0239b0f692b583dd7309b0c2e66db89e14ab17f81b9c29b5462201c90bb04569"
+    },
+    {
+      "path": "assets/harbor/ch3-sniper-derived/sniper-basecolor.jpg",
+      "bytes": 796491,
+      "sha256": "be5d7dbd4fd50c474d045bdbdfd7b11e6c02aac47a441b8d46ad0fcbaea9d34f"
+    },
+    {
+      "path": "assets/harbor/ch3-sniper-derived/sniper.mesh.mjs",
+      "bytes": 265179,
+      "sha256": "915c2f5b78365eba1ced8d51a39defd8fcb9e5b0a7a3a30b5fff9561e8c0bf77"
+    },
+    {
+      "path": "assets/harbor/ch4-static/ch4.mesh.mjs",
+      "bytes": 987014,
+      "sha256": "b630afa3e541e777539bf5bfa837f6a89d6b8c9c7a59eba4bcbaad2a93e06f9e"
+    },
+    {
+      "path": "assets/harbor/ch4-static/console-basecolor.jpg",
+      "bytes": 704694,
+      "sha256": "7d1365e497cbb4413d257a0fcb39a69706395c7c0579471012475553e4792357"
+    },
+    {
+      "path": "assets/harbor/ch4-static/gate-basecolor.jpg",
+      "bytes": 943544,
+      "sha256": "a8639b24335bd523e291afdf6e491ed6bcd29e4580317818d3acdca0a0fc2667"
+    },
+    {
+      "path": "assets/harbor/ch4-static/server-basecolor.jpg",
+      "bytes": 1028966,
+      "sha256": "e01a48bb8902d480f6f076ae43da9cf0113e3a54e308f9e43ea1d8d5b1ac2833"
+    },
+    {
+      "path": "assets/harbor/infected/丧尸.glb",
+      "bytes": 4385116,
+      "sha256": "8b5319bdb04e67ecd90045e81870dcaab1148aee3603083c792a6a00d8084e33"
+    },
+    {
+      "path": "assets/harbor/knife/punhal.mesh.mjs",
+      "bytes": 369138,
+      "sha256": "74572fd28ae0965274c367b9058fb04c97ef0a0bd82ae3b43157fcd4239be685"
+    },
+    {
+      "path": "assets/harbor/pickup-derived/pickup-basecolor.jpg",
+      "bytes": 1127572,
+      "sha256": "86a08667f76166983446e4b3b74b085ae28e3df9c09545703bd0bcbbd7a19b7f"
+    },
+    {
+      "path": "assets/harbor/pickup-derived/pickup.mesh.mjs",
+      "bytes": 445150,
+      "sha256": "183571925a2c8241d9cd11d4990ba4aab00ba0f0235349212c94bc4a0fa24fc3"
+    },
+    {
+      "path": "assets/harbor/soldier/soldier.glb",
+      "bytes": 4132084,
+      "sha256": "640c32f8d454618eb00f310e0b0901918452317fd1bc43fa3630ebc385f344ff"
+    },
+    {
+      "path": "assets/harbor/维修柜/维修柜.glb",
+      "bytes": 948308,
+      "sha256": "371cc49a8ae5d8e1c5dbaed1f56e928779f7342101d2c9cf79ac8a1ec757932a"
+    },
+    {
+      "path": "campaign/index.html",
+      "bytes": 578,
+      "sha256": "ea06f26f072c219bd88fd17417d4120cf1ed540e5a9153fe3058ed79419a8d67"
+    },
+    {
+      "path": "index.html",
+      "bytes": 578,
+      "sha256": "ea06f26f072c219bd88fd17417d4120cf1ed540e5a9153fe3058ed79419a8d67"
+    },
+    {
+      "path": "last-harbor-night/index.html",
+      "bytes": 1445395,
+      "sha256": "34527ac4fb18c37b71bc19dc4fd25a6f61879128b2c2756af234a33021bb53e7"
+    },
+    {
+      "path": "local/aftermath-casualties.mjs",
+      "bytes": 23347,
+      "sha256": "23dcedc2b29d479b5a2cf5163a064721197fae6a534717b1ba6dbe0843d1a95d"
+    },
+    {
+      "path": "local/aftermath-decals.mjs",
+      "bytes": 6539,
+      "sha256": "e6998d35643809e99441a8c5b536afdb2e259e225b90305bafbb4a3334fa4ed5"
+    },
+    {
+      "path": "local/aftermath-props.mjs",
+      "bytes": 11095,
+      "sha256": "54595ded728eb2448867e7e4cf68dedf588523fe5c13090b1cc37a5e019bfaa8"
+    },
+    {
+      "path": "local/aftermath-robots.mjs",
+      "bytes": 16471,
+      "sha256": "6eba3457b9e342ad1c2ef95f14cebba9e502bdacfde6544012187743bb354c53"
+    },
+    {
+      "path": "local/aftermath-signage.mjs",
+      "bytes": 8455,
+      "sha256": "e2eae4735aacb402f0bec6e2d7b2bcf44774326e0b69ae38da4f2efde0718faa"
+    },
+    {
+      "path": "local/aftermath.mjs",
+      "bytes": 6825,
+      "sha256": "bb2e2e6a11c67b301d857acf3adb32597fbc8f5ee4deaac4f51968bb268409db"
+    },
+    {
+      "path": "local/campaign-berth5.mjs",
+      "bytes": 2953,
+      "sha256": "59c6886478fe4547e2b0bfaffe0774ef911772ba56f40aa54ad38b2cea56a39e"
+    },
+    {
+      "path": "local/campaign-ch1-dialogue.mjs",
+      "bytes": 7317,
+      "sha256": "571fe3495bb5f654465165fd630937d06f6225caf4f8f2ad5ea1c6330c46c6e9"
+    },
+    {
+      "path": "local/campaign-ch1-layout.mjs",
+      "bytes": 1596,
+      "sha256": "a1ab4467fe23febfb0e87db88006f32bb719aa5108aa71a753c383382d56d66b"
+    },
+    {
+      "path": "local/campaign-ch2-deployment.mjs",
+      "bytes": 2223,
+      "sha256": "8851fd7898ae3256c4540d66e1722578a12e011355672be55f599e2ce3dbe452"
+    },
+    {
+      "path": "local/campaign-ch2-dialogue.mjs",
+      "bytes": 3723,
+      "sha256": "9370c2ffd05c5706b2550b34d9e7bbffb8437e79dde9c8cf9c2cf71320962536"
+    },
+    {
+      "path": "local/campaign-ch2-director.mjs",
+      "bytes": 24182,
+      "sha256": "16e5a71856148e1a39d6399c01d910660394b510b029d3b7420205c66effff3c"
+    },
+    {
+      "path": "local/campaign-ch2-environment.mjs",
+      "bytes": 13269,
+      "sha256": "0721ebb8eea8d22c77a5ad34d03ad70aaf1ef745268c24b52ba5681043f959d7"
+    },
+    {
+      "path": "local/campaign-ch2-hints.mjs",
+      "bytes": 3037,
+      "sha256": "780a1cf27ddc382f454f29d2257b85182c3742cddf55d6e1e32b4595b5ec25fa"
+    },
+    {
+      "path": "local/campaign-ch2-infected.mjs",
+      "bytes": 24297,
+      "sha256": "6510fbc4129e7acbbd15c337168b41ea403b5b35eec2bae07ee5ef99bb32d4d6"
+    },
+    {
+      "path": "local/campaign-ch2-layout.mjs",
+      "bytes": 17114,
+      "sha256": "4d1af065bc25e0c47f5bac76a15c458d22b853d1a3f817f5d7851ca25c64dc56"
+    },
+    {
+      "path": "local/campaign-ch2-navigation.mjs",
+      "bytes": 6005,
+      "sha256": "f330b0c5d6cb089a9756cc970c872b9bcad88eda538e3e61b7e30b5f27d9407d"
+    },
+    {
+      "path": "local/campaign-ch2-obstacles.mjs",
+      "bytes": 15528,
+      "sha256": "733c1615f82f9f4957a0d2cf9dc1e14aed9623dadd8f8cd2225b07d50c72fda9"
+    },
+    {
+      "path": "local/campaign-ch2-safe-rooms.mjs",
+      "bytes": 15058,
+      "sha256": "e4e8468b677b0cf4217a2eea74b6091096e72e54a3ae87ab97b151bc513766f6"
+    },
+    {
+      "path": "local/campaign-ch3-ammo.mjs",
+      "bytes": 11625,
+      "sha256": "792807d03824331b31144b125f2959ce74fba6daee245312a06fd8c883cb4b09"
+    },
+    {
+      "path": "local/campaign-ch3-assets.mjs",
+      "bytes": 3828,
+      "sha256": "579da10bdbc32e25daaad96b829edea11beac6857ea6504bf6664bc8fda7ef71"
+    },
+    {
+      "path": "local/campaign-ch3-clearance-config.mjs",
+      "bytes": 747,
+      "sha256": "46431d8a010af2f8020a6b65f05daa010a868a901d5581b8556f70f789621dd5"
+    },
+    {
+      "path": "local/campaign-ch3-clearance-effects.mjs",
+      "bytes": 1757,
+      "sha256": "c46e64be1e6336f01884e5c615813d99128b6c3b11702e8c9b0c6145f47879b1"
+    },
+    {
+      "path": "local/campaign-ch3-clearance-navigation.mjs",
+      "bytes": 5875,
+      "sha256": "2c8c26d76f12727ecc4dee59a4536d9ce974e72d2936aad39d3295caf6bc7845"
+    },
+    {
+      "path": "local/campaign-ch3-clearance.mjs",
+      "bytes": 25763,
+      "sha256": "f228627fea200c7199909704b46af9f8d9c50ef43c511806253bd0ede9cb3453"
+    },
+    {
+      "path": "local/campaign-ch3-conversation.mjs",
+      "bytes": 9501,
+      "sha256": "4305df569705c944cafaae52cbf996dd15727a79c02fd9a5023ebfedb922616e"
+    },
+    {
+      "path": "local/campaign-ch3-deployment.mjs",
+      "bytes": 2222,
+      "sha256": "40fec02e7dafead888b38ee77dba17eb7e788f839f7af4f458d4503d6eb6ff7a"
+    },
+    {
+      "path": "local/campaign-ch3-dialogue.mjs",
+      "bytes": 8272,
+      "sha256": "7b406ddf12eeee4e56c750f9960fdb7deb2d72fa1bb96437c70a75161cd72fb9"
+    },
+    {
+      "path": "local/campaign-ch3-environment.mjs",
+      "bytes": 19782,
+      "sha256": "0a1a161f754af7904b2254971bf1e3772c955f393734fa7321bab207b932d03f"
+    },
+    {
+      "path": "local/campaign-ch3-layout.mjs",
+      "bytes": 7709,
+      "sha256": "588831d096f6382e55454c24e2714f71ecfa056a649da350eb078d08e817d07e"
+    },
+    {
+      "path": "local/campaign-ch3-personnel-visual.mjs",
+      "bytes": 20602,
+      "sha256": "01da3f2d54e48610f5da0eb992af9cf6df1e52b35a2ce646b23e5c6ff12ccfba"
+    },
+    {
+      "path": "local/campaign-ch3-rescue.mjs",
+      "bytes": 7233,
+      "sha256": "0ba712da494968d82f08acf8eb10bb84363f4360705f3c9ddef70299473216de"
+    },
+    {
+      "path": "local/campaign-ch3-runtime.mjs",
+      "bytes": 14910,
+      "sha256": "a778fa5094383df0e257ac391052ecb6eb1295520f826b529cc51257aa8db08e"
+    },
+    {
+      "path": "local/campaign-ch3-sniper-config.mjs",
+      "bytes": 540,
+      "sha256": "9f2ce674e5af8a6c88ed11997dc4ca3f6eb8ae51c83254b469d2e03b6cc71ea8"
+    },
+    {
+      "path": "local/campaign-ch3-sniper-core.mjs",
+      "bytes": 9355,
+      "sha256": "fc02badf6fa2baa772fb26e4366f7f556dfa8dbf5a1eda07aa389f962e776e53"
+    },
+    {
+      "path": "local/campaign-ch3-sniper-effects.mjs",
+      "bytes": 3964,
+      "sha256": "a35c35463f57f1f05f78ba3a95b6e0cbe8792214a0e6027b0dfd5bc2176733b0"
+    },
+    {
+      "path": "local/campaign-ch3-sniper-perception.mjs",
+      "bytes": 2088,
+      "sha256": "86c448292c9f048a7da43f60bb4077d324f149efa39f1d36c2462ff0da6064e3"
+    },
+    {
+      "path": "local/campaign-ch3-sniper-visual.mjs",
+      "bytes": 17052,
+      "sha256": "c292782e0ae547df920689debc3667fe903f7c25ddad5021cab494a9a156f8fe"
+    },
+    {
+      "path": "local/campaign-ch3-sniper.mjs",
+      "bytes": 6789,
+      "sha256": "96023449ae9a01806f176fee25faa8c4fab91d605b9c6bdc353a34a580570247"
+    },
+    {
+      "path": "local/campaign-ch4-ammo.mjs",
+      "bytes": 3597,
+      "sha256": "2b30838f31acb741e2a1b64192a3036909698f9fb859f5223dd37d491ebde81a"
+    },
+    {
+      "path": "local/campaign-ch4-assets.mjs",
+      "bytes": 3728,
+      "sha256": "448763fe7bfba88578018aeeb6c10c774fdc89a42f80d8d105b12fe86c722842"
+    },
+    {
+      "path": "local/campaign-ch4-clearance.mjs",
+      "bytes": 2634,
+      "sha256": "78183fabf8e50cd7fbb5b84b72fc1a7b2c7cf1f6bcf0b57655e11f2b04c6d8d0"
+    },
+    {
+      "path": "local/campaign-ch4-dialogue.mjs",
+      "bytes": 6070,
+      "sha256": "851cd3717fbbde4f0c29dc4805ac17aca49ebb4aa849f95287e59d5f8d1c8bc5"
+    },
+    {
+      "path": "local/campaign-ch4-dossier.mjs",
+      "bytes": 9479,
+      "sha256": "e9fa6f67f7488afd9efd62ef0b7006261bad177a3e8dcd5688d536074ed45de9"
+    },
+    {
+      "path": "local/campaign-ch4-environment.mjs",
+      "bytes": 15625,
+      "sha256": "f98e37195e1b12026bdb00bad82f36d641ea5435fabd8783a905dec7ec761b5f"
+    },
+    {
+      "path": "local/campaign-ch4-gate.mjs",
+      "bytes": 2825,
+      "sha256": "a1ff0b621164296da7357149021b74db9b4a3b8c03dc426a079b55db85ce5576"
+    },
+    {
+      "path": "local/campaign-ch4-infected-layout.mjs",
+      "bytes": 902,
+      "sha256": "bb8277c6e2827e67374ed83b50e514709f7693db2e9186aa3192be90c4b1a48f"
+    },
+    {
+      "path": "local/campaign-ch4-infected.mjs",
+      "bytes": 587,
+      "sha256": "631141efc544d27f921c86ab861cde63ff04b1da23800fca9021cd35c9dcac3b"
+    },
+    {
+      "path": "local/campaign-ch4-layout.mjs",
+      "bytes": 4280,
+      "sha256": "9c3a1b4d33272851a117284f3a02b63b2538e29c472397c3f9086d1bc1fbf4dc"
+    },
+    {
+      "path": "local/campaign-ch4-reinforcements.mjs",
+      "bytes": 7812,
+      "sha256": "660ec1a4fc0df23375d34e718c369421dc160e845680ca968a57b663d9bc5fe5"
+    },
+    {
+      "path": "local/campaign-ch4-runtime.mjs",
+      "bytes": 8013,
+      "sha256": "c2007ce7440ea3e67e8ed7a468fda4ea596b5e010270d23f73658b2a2ef645bb"
+    },
+    {
+      "path": "local/campaign-ch5-ammo.mjs",
+      "bytes": 911,
+      "sha256": "99ecacb39e89e255ea0d62016a481f8a7297ccaf9b08b0be9ad6cea76e6f072a"
+    },
+    {
+      "path": "local/campaign-ch5-battle.mjs",
+      "bytes": 5836,
+      "sha256": "b15f9100cef64e9d14690af3033542229af2d9828795114a1c9cf8b4f66ceebc"
+    },
+    {
+      "path": "local/campaign-ch5-combat.mjs",
+      "bytes": 13023,
+      "sha256": "25ee63dd378fd67de58e0dd63a1e0ecbb0f9cf2dfaa1c09998f11f1a55ac7a9e"
+    },
+    {
+      "path": "local/campaign-ch5-departure-view.mjs",
+      "bytes": 4716,
+      "sha256": "2a939eca53c1108c72df0f85da71204a893c03ef1fe0ddc90d76bc72dd6d9f85"
+    },
+    {
+      "path": "local/campaign-ch5-dialogue.mjs",
+      "bytes": 7532,
+      "sha256": "a0cf44f20a6bb728aee7fa7b590d4de66f5e16e836709b1ec5b2f62fe405fe71"
+    },
+    {
+      "path": "local/campaign-ch5-ending-state.mjs",
+      "bytes": 2835,
+      "sha256": "db99c622ef8de1221f11212abc75fec7cdc32cda73d51ea9f1a19352a6e2d117"
+    },
+    {
+      "path": "local/campaign-ch5-ending.mjs",
+      "bytes": 9132,
+      "sha256": "922219202e532fd4f2e86189a79b4db40e4e759a7156b15bc68397c00d0cd327"
+    },
+    {
+      "path": "local/campaign-ch5-facilities.mjs",
+      "bytes": 5180,
+      "sha256": "5703deac84582d16c6f3935c34d89b553d62bbf01258f60742166df3b5e249ec"
+    },
+    {
+      "path": "local/campaign-ch5-fuel.mjs",
+      "bytes": 5492,
+      "sha256": "e32dca7b3936bddbfff8577424b2479ef2a3c25b45cd074df67c56c2bf0f37ec"
+    },
+    {
+      "path": "local/campaign-ch5-infected.mjs",
+      "bytes": 3666,
+      "sha256": "dacaa6bfdc62ea47eb71d52cd95dd15c5f1f2df64e5b5a178bd6b7fc078d6e4e"
+    },
+    {
+      "path": "local/campaign-ch5-native.mjs",
+      "bytes": 10004,
+      "sha256": "3da5ad8871a00ef86017120634a205712a2cca09e85439a4e524399f5e9b7ca9"
+    },
+    {
+      "path": "local/campaign-ch5-population.mjs",
+      "bytes": 3157,
+      "sha256": "4ba32f463723ac63c314d07b337f700a95f625a1403ffe45b7b68bcc9b5e00cc"
+    },
+    {
+      "path": "local/campaign-ch5-repair-asset.mjs",
+      "bytes": 4528,
+      "sha256": "30972f62217b34f6454741dd288ee51b20e1920abf2d4da9666fc3414caf5796"
+    },
+    {
+      "path": "local/campaign-ch5-runtime.mjs",
+      "bytes": 8980,
+      "sha256": "6e6aede296c45950c42992e0228e8aeb94a66b69eeaac18e0825d5d8d6697b2f"
+    },
+    {
+      "path": "local/campaign-ch5-spawns.mjs",
+      "bytes": 4940,
+      "sha256": "b465053834f163786aec62bf914ac8e9caa56aa43f22de835fa08583ed204fa1"
+    },
+    {
+      "path": "local/campaign-ch5-warehouse.mjs",
+      "bytes": 3029,
+      "sha256": "47d0cf94a481952c32b9648302006eff914a67d31aaae6f0063a2d7af8c0c40a"
+    },
+    {
+      "path": "local/campaign-containers.mjs",
+      "bytes": 7266,
+      "sha256": "176bde0aabc6cc273fa38c996b9185be53cd1df658fc961532e633e1abf3779b"
+    },
+    {
+      "path": "local/campaign-dialogue.mjs",
+      "bytes": 8323,
+      "sha256": "fe5efa1bab4dd333ad6897a22b0842ef81e272f8aceb74849c3e3e845e1658be"
+    },
+    {
+      "path": "local/campaign-guard.mjs",
+      "bytes": 12065,
+      "sha256": "1097641dcad80ad3d577271006bb7d7d877c03d29db1a542e947e25e7bf75bc5"
+    },
+    {
+      "path": "local/campaign-layout.mjs",
+      "bytes": 9211,
+      "sha256": "e3f21a79c2ef88e8740435c014549efbbc7d81db2a67300cbd152bf0609ab98c"
+    },
+    {
+      "path": "local/campaign-m1.mjs",
+      "bytes": 7590,
+      "sha256": "a31cff7b6e8e5c00d9e1cf672d88530a0342ca4feb3960fed38387116ff41d78"
+    },
+    {
+      "path": "local/campaign-m2.mjs",
+      "bytes": 35274,
+      "sha256": "6709a8e119c563575dad6a9061ee27b5f8541464732b864d0a32a5e3d3dd204c"
+    },
+    {
+      "path": "local/campaign-patrols.mjs",
+      "bytes": 11138,
+      "sha256": "545fea5d79b71243a159a8abe71f0ef4259cf77a4a29759d06544bbe70bc8210"
+    },
+    {
+      "path": "local/campaign-pickup-asset.mjs",
+      "bytes": 2270,
+      "sha256": "c55fa5156105bf47a3ecd10ac1ef5d30af6cd062b6700425364f92642570d617"
+    },
+    {
+      "path": "local/campaign-player-state.mjs",
+      "bytes": 2486,
+      "sha256": "dec2e46da3f69b6897757590d3777b5a694fef3e47d26f28fd0a5ec903739da8"
+    },
+    {
+      "path": "local/campaign-sectors.mjs",
+      "bytes": 27605,
+      "sha256": "4a894ec677eaa71169ca86085218c0e017ec6f8a8fedf14c41860cc26a94a6ae"
+    },
+    {
+      "path": "local/campaign-state.mjs",
+      "bytes": 14483,
+      "sha256": "674137e98ef24d7220cc1b85b261009e2fd8b7271e55cb9f1852394a9b1fa54a"
+    },
+    {
+      "path": "local/campaign-supplies.mjs",
+      "bytes": 8177,
+      "sha256": "746d96561654b9d338e77106b76b8ff86d359af8281ccc9129c9ee0890332790"
+    },
+    {
+      "path": "local/campaign-warehouse.mjs",
+      "bytes": 9252,
+      "sha256": "260b71e5f51b9710aded47762270a307eaeddc6a9c2fa77172ddaab3fe433a4f"
+    },
+    {
+      "path": "local/chapter-director.mjs",
+      "bytes": 1657,
+      "sha256": "2e37026d6431b96b77d5cef8d58bcd278ee353fbe116358a648ca8435d493e2f"
+    },
+    {
+      "path": "local/character-animation.mjs",
+      "bytes": 5495,
+      "sha256": "f1929325045aa31f062e972264b704b2b019af04090417b149d34cdf2fd4ae21"
+    },
+    {
+      "path": "local/character-assets.mjs",
+      "bytes": 18729,
+      "sha256": "5747fb469fc5ab009124869e7b477bb4a67e251f9778d30dffa0a330527e0445"
+    },
+    {
+      "path": "local/character-audio.mjs",
+      "bytes": 9926,
+      "sha256": "8b39c75df19d5b9f12dbbb0bdfa225737b8def4c566d34c853fa9554487a4d88"
+    },
+    {
+      "path": "local/character-clips.mjs",
+      "bytes": 1005,
+      "sha256": "0367752f9cfc33b5d939312657aa6ee88efa7207ca287d42a19c2ab5b34e3d64"
+    },
+    {
+      "path": "local/character-native-target.mjs",
+      "bytes": 8231,
+      "sha256": "d7cf3302763a0e57910f31e95f6a662f6ea89f5a73ae13d567123323aad59213"
+    },
+    {
+      "path": "local/equipment.mjs",
+      "bytes": 17367,
+      "sha256": "ef1fa50761101db6f595ae30860bfda110dce23976c4d6a781274bc3c4d6e073"
+    },
+    {
+      "path": "local/infrastructure-state.mjs",
+      "bytes": 1595,
+      "sha256": "4968a139a522b976a4630e0a3c45c57570e31d4a24d7523bbd182b4dd121add0"
+    },
+    {
+      "path": "local/infrastructure.mjs",
+      "bytes": 13174,
+      "sha256": "b66cf0f8e935098cab8a3324ea917040762b52f9f28c927f0ca13cc250779883"
+    },
+    {
+      "path": "local/knife-asset.mjs",
+      "bytes": 1900,
+      "sha256": "a7f1cfee46a13a9f9b3743e066787d48e91a673c4f04e4e2f20cc8eedb3e1126"
+    },
+    {
+      "path": "local/knife-sound.mjs",
+      "bytes": 2034,
+      "sha256": "5bdf1e6a1110b090cd714c64a8ffcbdcfc08368aebbe51ed9a8684514617fca5"
+    },
+    {
+      "path": "local/knife.mjs",
+      "bytes": 7502,
+      "sha256": "0584ef4faebc7d44d256e5ccfd2c61dd11c3bfc087f79366c43c9624513d488f"
+    },
+    {
+      "path": "local/night.mjs",
+      "bytes": 12354,
+      "sha256": "fca04c835e5ab23fc56831978eba65e0b69683e859c68fc618d83a7947187d98"
+    },
+    {
+      "path": "local/opening-narrative.mjs",
+      "bytes": 26863,
+      "sha256": "58f6578f3c1a139741b61d39a536610bb3459b21da67aed168d61918d320224e"
+    },
+    {
+      "path": "local/pistol.mjs",
+      "bytes": 19569,
+      "sha256": "ef6a2044bf8f5b252abe4355875bce1088fb7178c7f708073ae9548ea508183b"
+    },
+    {
+      "path": "local/power-lighting.mjs",
+      "bytes": 9348,
+      "sha256": "33fe7ce1cee47c99945dcd9302bf46cf6ff555339f8acba8a8adc0325956a470"
+    },
+    {
+      "path": "local/reinforcements.mjs",
+      "bytes": 10612,
+      "sha256": "179a04887ea5eb76c3c26cb83e7ed0a6ad04b1a2b0f9efa9c21b8e79e7e17eb7"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "CREDITS.md",
+      "bytes": 4313,
+      "sha256": "3f730e53152be26e0bb967cf8459db54ab925b80d8b7e52fc36f8bc8ab0ebf08"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 4563,
+      "sha256": "ffcca38841adb694b6f380647e15f17c446a4d1656fed51a1e2041d064c94cc8"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 2420,
+      "sha256": "0f568271b5571a43f7492f203afd4977e4fa98077566fcb73e0376c7d9297f57"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1566,
+      "sha256": "1fea51aff15a7a84de0423467910ae6c396c68cc87413728683d5bcc49ebbf6c"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Alert/Alert1.ogg",
+      "bytes": 16449,
+      "sha256": "113a4596a5cedde74f110a580eb0877d9c6affd3f668ce8020d57908a64d729f"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Alert/Alert2.ogg",
+      "bytes": 16816,
+      "sha256": "ff65ef6003d6738754cbfcd110a917a0728b03f5fa221e365a135c8ade2fef41"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Alert/Alert3.ogg",
+      "bytes": 16138,
+      "sha256": "2aa3d5d609f97cca985227b3944d875f76d7731243c0309f11ce0ff707fd943b"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Alert/Alert4.ogg",
+      "bytes": 17862,
+      "sha256": "5852063cb893a5a4c41fb21ee2778371e1189cb9884e00d60976ff7aa1f4929b"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Attack/Attack1.ogg",
+      "bytes": 16991,
+      "sha256": "df90eddaa12f180db40fa9bd9e49f227953b7a67cbee2137d64d8ca85f75ce90"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Attack/Attack2.ogg",
+      "bytes": 16402,
+      "sha256": "a1dc0a125d39e7f431123c0f458cc9f5e2defa23d6fc7b3efdb7430f3f14c38d"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Attack/Attack3.ogg",
+      "bytes": 15190,
+      "sha256": "387c22abe79d815954500ca805ad720fa05a746c30ecbf89c1fca83a25201a96"
+    },
+    {
+      "path": "assets/harbor/audio/infected/Attack/Attack4.ogg",
+      "bytes": 16839,
+      "sha256": "b7683ed717e5c9eef9f2d6378b2510085a4ba9488f0fe06d44f1240459700ec2"
+    },
+    {
+      "path": "assets/harbor/audio/infected/chase/chase1.ogg",
+      "bytes": 56679,
+      "sha256": "83ba88536edd710276d4dd8fda9f7e22983711bfa284566da218de93006cacb9"
+    },
+    {
+      "path": "assets/harbor/audio/infected/chase/chase2.ogg",
+      "bytes": 56763,
+      "sha256": "7a80e329b54a9fc79358fb5593b6b0a7226f76b2ef488542a5bbf0f25e8c9f0f"
+    },
+    {
+      "path": "assets/harbor/audio/infected/chase/chase3.ogg",
+      "bytes": 57032,
+      "sha256": "797f1cdbe59e3d68e91f6fea1972a0aadb740ce04e5099b8d8dec73d089dec05"
+    },
+    {
+      "path": "assets/harbor/audio/infected/chase/chase4.ogg",
+      "bytes": 56918,
+      "sha256": "89b8c567f216de9520fda108a936bdfcbe525c4813e50a4c69a5524ae2ca69f3"
+    },
+    {
+      "path": "assets/harbor/audio/infected/idle/idle1.ogg",
+      "bytes": 80175,
+      "sha256": "a90f970a030145faa83e8ca3f0df5597ee4a13652ede18560068084804e7221b"
+    },
+    {
+      "path": "assets/harbor/audio/infected/idle/idle2.ogg",
+      "bytes": 79193,
+      "sha256": "46a4d6045fea2c5eb253dbd3fcf1590db1f1e5a866d3fb93c7429c7e95a34df2"
+    },
+    {
+      "path": "assets/harbor/audio/infected/idle/idle3.ogg",
+      "bytes": 78661,
+      "sha256": "473b8e26697d6d413e3096b825c3b58c4955fa4f2f5b868d75d6a6eadc44bec1"
+    },
+    {
+      "path": "assets/harbor/audio/infected/idle/idle4.ogg",
+      "bytes": 74425,
+      "sha256": "a6049357693f9ba2b131b76d9dd19e02fb7ed25d122d29dfb7fcadd0c09d9b84"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/ch3.mesh.mjs",
+      "bytes": 896609,
+      "sha256": "b109c83b78180f3454f75ffb4fbe35be89a8b563564b27264b705f26ac9f432d"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/cover-basecolor.jpg",
+      "bytes": 675767,
+      "sha256": "c2afa2042739577c862e238bebad187f65b187918527d2251ded39b3ab873fe9"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/cover-metallic-roughness.jpg",
+      "bytes": 508770,
+      "sha256": "da45fd847bf1381c741b14c1ba1f9424539801ba37375f4ab0773e10c39033c7"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/cover-normal.jpg",
+      "bytes": 173384,
+      "sha256": "cf647a951e788ef1ac877d3e9f482fb6210c9e534e8fa78be13d2e7841535a9e"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/observation-basecolor.jpg",
+      "bytes": 745325,
+      "sha256": "b086de01f1a39d542883205e98cf6c1ba1c5df11f9f9a001ae3c8bf41ee9ac73"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/observation-metallic-roughness.jpg",
+      "bytes": 575254,
+      "sha256": "5c3b3fbb90c64b0d7fc606332ce82e306b424c0232fe364ebb06d8b04a410b16"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/observation-normal.jpg",
+      "bytes": 236380,
+      "sha256": "7853eb606c211bbb98c6e0729b9c78c83368e8f28650c323a0ed1335388c1b0c"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/sign-basecolor.jpg",
+      "bytes": 977805,
+      "sha256": "5e2aeec81b2eb3d5ee5d949e35bc08f65f4a820d7a52f001a3f1ad572d5f6e08"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/sign-metallic-roughness.jpg",
+      "bytes": 743865,
+      "sha256": "87e99e7d45b12aff29e04547ce074aa9617ef5190e069ee231f8b5a70f1b6676"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/sign-normal.jpg",
+      "bytes": 277280,
+      "sha256": "116252dad8c487ab9c8bbd9084ea8566d84c4a293d8f3ea837b516313347df22"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/workbench-basecolor.jpg",
+      "bytes": 726987,
+      "sha256": "08cad2f69ec7da759e3b5c35d22183707fc0bcbcd50135e9fc562841b986d1fd"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/workbench-metallic-roughness.jpg",
+      "bytes": 739651,
+      "sha256": "6b13768b22ad6d0a86263ee14d3c6613b9242d37900755cdfef35c69bb1c3ad0"
+    },
+    {
+      "path": "assets/harbor/ch3-derived/workbench-normal.jpg",
+      "bytes": 205928,
+      "sha256": "f84fc04022dce584823eb3c75f18cd625ecf6863e943c33b18336e4e2c025209"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/rifle-basecolor.jpg",
+      "bytes": 770931,
+      "sha256": "19fe5abab724b270dbf4194ca5aabc3eef60f7817b96bbc115062178ec30202c"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/rifle.mesh.mjs",
+      "bytes": 287041,
+      "sha256": "8ee0f63715b1976404034f503de45ef45105e2fd9ad2a35623b58a4d4b675894"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/worker-basecolor.jpg",
+      "bytes": 1315735,
+      "sha256": "44322fe37092d3f4e6e8d5dcea049ae969a8d63fa2ce955da14a4a4409193c91"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/worker-normal.jpg",
+      "bytes": 572672,
+      "sha256": "0ef2adf7c45a3e9523f2017983874496dd69ddf78fbd8208de5d207da3187142"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/worker-rm.jpg",
+      "bytes": 704823,
+      "sha256": "bcac07b3a0496bd2ce0c7717070c792e5cd6d6141a22e50243052fe4b26015c6"
+    },
+    {
+      "path": "assets/harbor/ch3-personnel-derived/worker.mesh.mjs",
+      "bytes": 1238042,
+      "sha256": "0239b0f692b583dd7309b0c2e66db89e14ab17f81b9c29b5462201c90bb04569"
+    },
+    {
+      "path": "assets/harbor/ch3-sniper-derived/sniper-basecolor.jpg",
+      "bytes": 796491,
+      "sha256": "be5d7dbd4fd50c474d045bdbdfd7b11e6c02aac47a441b8d46ad0fcbaea9d34f"
+    },
+    {
+      "path": "assets/harbor/ch3-sniper-derived/sniper.mesh.mjs",
+      "bytes": 265179,
+      "sha256": "915c2f5b78365eba1ced8d51a39defd8fcb9e5b0a7a3a30b5fff9561e8c0bf77"
+    },
+    {
+      "path": "assets/harbor/ch4-static/ch4.mesh.mjs",
+      "bytes": 987014,
+      "sha256": "b630afa3e541e777539bf5bfa837f6a89d6b8c9c7a59eba4bcbaad2a93e06f9e"
+    },
+    {
+      "path": "assets/harbor/ch4-static/console-basecolor.jpg",
+      "bytes": 704694,
+      "sha256": "7d1365e497cbb4413d257a0fcb39a69706395c7c0579471012475553e4792357"
+    },
+    {
+      "path": "assets/harbor/ch4-static/gate-basecolor.jpg",
+      "bytes": 943544,
+      "sha256": "a8639b24335bd523e291afdf6e491ed6bcd29e4580317818d3acdca0a0fc2667"
+    },
+    {
+      "path": "assets/harbor/ch4-static/server-basecolor.jpg",
+      "bytes": 1028966,
+      "sha256": "e01a48bb8902d480f6f076ae43da9cf0113e3a54e308f9e43ea1d8d5b1ac2833"
+    },
+    {
+      "path": "assets/harbor/infected/丧尸.glb",
+      "bytes": 4385116,
+      "sha256": "8b5319bdb04e67ecd90045e81870dcaab1148aee3603083c792a6a00d8084e33"
+    },
+    {
+      "path": "assets/harbor/knife/punhal.mesh.mjs",
+      "bytes": 369138,
+      "sha256": "74572fd28ae0965274c367b9058fb04c97ef0a0bd82ae3b43157fcd4239be685"
+    },
+    {
+      "path": "assets/harbor/pickup-derived/pickup-basecolor.jpg",
+      "bytes": 1127572,
+      "sha256": "86a08667f76166983446e4b3b74b085ae28e3df9c09545703bd0bcbbd7a19b7f"
+    },
+    {
+      "path": "assets/harbor/pickup-derived/pickup.mesh.mjs",
+      "bytes": 445150,
+      "sha256": "183571925a2c8241d9cd11d4990ba4aab00ba0f0235349212c94bc4a0fa24fc3"
+    },
+    {
+      "path": "assets/harbor/soldier/soldier.glb",
+      "bytes": 4132084,
+      "sha256": "640c32f8d454618eb00f310e0b0901918452317fd1bc43fa3630ebc385f344ff"
+    },
+    {
+      "path": "assets/harbor/维修柜/维修柜.glb",
+      "bytes": 948308,
+      "sha256": "371cc49a8ae5d8e1c5dbaed1f56e928779f7342101d2c9cf79ac8a1ec757932a"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 2151,
+      "sha256": "684ed3c63746814ce7f3e3c64b400b73302c91ecf3b03192d62a96e10de22345"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1220,
+      "sha256": "dfe48a8b37bea2c8220c25559776c4a4ccc08849f3ca58f51ee894ec81f326bb"
+    },
+    {
+      "path": "scripts/harbor/aftermath-casualties.mjs",
+      "bytes": 23347,
+      "sha256": "23dcedc2b29d479b5a2cf5163a064721197fae6a534717b1ba6dbe0843d1a95d"
+    },
+    {
+      "path": "scripts/harbor/aftermath-decals.mjs",
+      "bytes": 6539,
+      "sha256": "e6998d35643809e99441a8c5b536afdb2e259e225b90305bafbb4a3334fa4ed5"
+    },
+    {
+      "path": "scripts/harbor/aftermath-props.mjs",
+      "bytes": 11095,
+      "sha256": "54595ded728eb2448867e7e4cf68dedf588523fe5c13090b1cc37a5e019bfaa8"
+    },
+    {
+      "path": "scripts/harbor/aftermath-robots.mjs",
+      "bytes": 16471,
+      "sha256": "6eba3457b9e342ad1c2ef95f14cebba9e502bdacfde6544012187743bb354c53"
+    },
+    {
+      "path": "scripts/harbor/aftermath-signage.mjs",
+      "bytes": 8455,
+      "sha256": "e2eae4735aacb402f0bec6e2d7b2bcf44774326e0b69ae38da4f2efde0718faa"
+    },
+    {
+      "path": "scripts/harbor/aftermath.mjs",
+      "bytes": 6825,
+      "sha256": "bb2e2e6a11c67b301d857acf3adb32597fbc8f5ee4deaac4f51968bb268409db"
+    },
+    {
+      "path": "scripts/harbor/build-night.mjs",
+      "bytes": 30227,
+      "sha256": "abfa48dfa6d636b57fdf1527835f67e2610e530a31d78ed456e716f360f6c29f"
+    },
+    {
+      "path": "scripts/harbor/campaign-berth5.mjs",
+      "bytes": 2953,
+      "sha256": "59c6886478fe4547e2b0bfaffe0774ef911772ba56f40aa54ad38b2cea56a39e"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch1-dialogue.mjs",
+      "bytes": 7317,
+      "sha256": "571fe3495bb5f654465165fd630937d06f6225caf4f8f2ad5ea1c6330c46c6e9"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch1-layout.mjs",
+      "bytes": 1596,
+      "sha256": "a1ab4467fe23febfb0e87db88006f32bb719aa5108aa71a753c383382d56d66b"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch2-deployment.mjs",
+      "bytes": 2223,
+      "sha256": "8851fd7898ae3256c4540d66e1722578a12e011355672be55f599e2ce3dbe452"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch2-dialogue.mjs",
+      "bytes": 3723,
+      "sha256": "9370c2ffd05c5706b2550b34d9e7bbffb8437e79dde9c8cf9c2cf71320962536"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch2-director.mjs",
+      "bytes": 24182,
+      "sha256": "16e5a71856148e1a39d6399c01d910660394b510b029d3b7420205c66effff3c"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch2-environment.mjs",
+      "bytes": 13269,
+      "sha256": "0721ebb8eea8d22c77a5ad34d03ad70aaf1ef745268c24b52ba5681043f959d7"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch2-hints.mjs",
+      "bytes": 3037,
+      "sha256": "780a1cf27ddc382f454f29d2257b85182c3742cddf55d6e1e32b4595b5ec25fa"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch2-infected.mjs",
+      "bytes": 24297,
+      "sha256": "6510fbc4129e7acbbd15c337168b41ea403b5b35eec2bae07ee5ef99bb32d4d6"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch2-layout.mjs",
+      "bytes": 17114,
+      "sha256": "4d1af065bc25e0c47f5bac76a15c458d22b853d1a3f817f5d7851ca25c64dc56"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch2-navigation.mjs",
+      "bytes": 6005,
+      "sha256": "f330b0c5d6cb089a9756cc970c872b9bcad88eda538e3e61b7e30b5f27d9407d"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch2-obstacles.mjs",
+      "bytes": 15528,
+      "sha256": "733c1615f82f9f4957a0d2cf9dc1e14aed9623dadd8f8cd2225b07d50c72fda9"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch2-safe-rooms.mjs",
+      "bytes": 15058,
+      "sha256": "e4e8468b677b0cf4217a2eea74b6091096e72e54a3ae87ab97b151bc513766f6"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-ammo.mjs",
+      "bytes": 11625,
+      "sha256": "792807d03824331b31144b125f2959ce74fba6daee245312a06fd8c883cb4b09"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-assets.mjs",
+      "bytes": 3833,
+      "sha256": "8272f60562c97aa376d32b182f98343573d88c437399c9e25fa966df0f5f7d6f"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-clearance-config.mjs",
+      "bytes": 747,
+      "sha256": "46431d8a010af2f8020a6b65f05daa010a868a901d5581b8556f70f789621dd5"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-clearance-effects.mjs",
+      "bytes": 1757,
+      "sha256": "c46e64be1e6336f01884e5c615813d99128b6c3b11702e8c9b0c6145f47879b1"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-clearance-navigation.mjs",
+      "bytes": 5875,
+      "sha256": "2c8c26d76f12727ecc4dee59a4536d9ce974e72d2936aad39d3295caf6bc7845"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-clearance.mjs",
+      "bytes": 25763,
+      "sha256": "f228627fea200c7199909704b46af9f8d9c50ef43c511806253bd0ede9cb3453"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-conversation.mjs",
+      "bytes": 9501,
+      "sha256": "4305df569705c944cafaae52cbf996dd15727a79c02fd9a5023ebfedb922616e"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-deployment.mjs",
+      "bytes": 2222,
+      "sha256": "40fec02e7dafead888b38ee77dba17eb7e788f839f7af4f458d4503d6eb6ff7a"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-dialogue.mjs",
+      "bytes": 8272,
+      "sha256": "7b406ddf12eeee4e56c750f9960fdb7deb2d72fa1bb96437c70a75161cd72fb9"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-environment.mjs",
+      "bytes": 19782,
+      "sha256": "0a1a161f754af7904b2254971bf1e3772c955f393734fa7321bab207b932d03f"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-layout.mjs",
+      "bytes": 7709,
+      "sha256": "588831d096f6382e55454c24e2714f71ecfa056a649da350eb078d08e817d07e"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-personnel-visual.mjs",
+      "bytes": 20612,
+      "sha256": "ce5a4b330a20c308e49cc3a400a5000710277c53760e18c033005d57ec516dd9"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-rescue.mjs",
+      "bytes": 7233,
+      "sha256": "0ba712da494968d82f08acf8eb10bb84363f4360705f3c9ddef70299473216de"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-runtime.mjs",
+      "bytes": 14910,
+      "sha256": "a778fa5094383df0e257ac391052ecb6eb1295520f826b529cc51257aa8db08e"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-sniper-config.mjs",
+      "bytes": 540,
+      "sha256": "9f2ce674e5af8a6c88ed11997dc4ca3f6eb8ae51c83254b469d2e03b6cc71ea8"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-sniper-core.mjs",
+      "bytes": 9355,
+      "sha256": "fc02badf6fa2baa772fb26e4366f7f556dfa8dbf5a1eda07aa389f962e776e53"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-sniper-effects.mjs",
+      "bytes": 3964,
+      "sha256": "a35c35463f57f1f05f78ba3a95b6e0cbe8792214a0e6027b0dfd5bc2176733b0"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-sniper-perception.mjs",
+      "bytes": 2088,
+      "sha256": "86c448292c9f048a7da43f60bb4077d324f149efa39f1d36c2462ff0da6064e3"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-sniper-visual.mjs",
+      "bytes": 17057,
+      "sha256": "b065bf4beeef2ea77ad1f3bfb6c416a6e010e7492aeff7d5cae086853c50ad21"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch3-sniper.mjs",
+      "bytes": 6789,
+      "sha256": "96023449ae9a01806f176fee25faa8c4fab91d605b9c6bdc353a34a580570247"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-ammo.mjs",
+      "bytes": 3597,
+      "sha256": "2b30838f31acb741e2a1b64192a3036909698f9fb859f5223dd37d491ebde81a"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-assets.mjs",
+      "bytes": 3733,
+      "sha256": "6f0b04cca4d3ccbbab02f5368d62885726632349a855c78bb8349033794cceec"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-clearance.mjs",
+      "bytes": 2634,
+      "sha256": "78183fabf8e50cd7fbb5b84b72fc1a7b2c7cf1f6bcf0b57655e11f2b04c6d8d0"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-dialogue.mjs",
+      "bytes": 6070,
+      "sha256": "851cd3717fbbde4f0c29dc4805ac17aca49ebb4aa849f95287e59d5f8d1c8bc5"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-dossier.mjs",
+      "bytes": 9479,
+      "sha256": "e9fa6f67f7488afd9efd62ef0b7006261bad177a3e8dcd5688d536074ed45de9"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-environment.mjs",
+      "bytes": 15625,
+      "sha256": "f98e37195e1b12026bdb00bad82f36d641ea5435fabd8783a905dec7ec761b5f"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-gate.mjs",
+      "bytes": 2825,
+      "sha256": "a1ff0b621164296da7357149021b74db9b4a3b8c03dc426a079b55db85ce5576"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-infected-layout.mjs",
+      "bytes": 902,
+      "sha256": "bb8277c6e2827e67374ed83b50e514709f7693db2e9186aa3192be90c4b1a48f"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-infected.mjs",
+      "bytes": 587,
+      "sha256": "631141efc544d27f921c86ab861cde63ff04b1da23800fca9021cd35c9dcac3b"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-layout.mjs",
+      "bytes": 4280,
+      "sha256": "9c3a1b4d33272851a117284f3a02b63b2538e29c472397c3f9086d1bc1fbf4dc"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-reinforcements.mjs",
+      "bytes": 7812,
+      "sha256": "660ec1a4fc0df23375d34e718c369421dc160e845680ca968a57b663d9bc5fe5"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch4-runtime.mjs",
+      "bytes": 8013,
+      "sha256": "c2007ce7440ea3e67e8ed7a468fda4ea596b5e010270d23f73658b2a2ef645bb"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-ammo.mjs",
+      "bytes": 911,
+      "sha256": "99ecacb39e89e255ea0d62016a481f8a7297ccaf9b08b0be9ad6cea76e6f072a"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-battle.mjs",
+      "bytes": 5836,
+      "sha256": "b15f9100cef64e9d14690af3033542229af2d9828795114a1c9cf8b4f66ceebc"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-combat.mjs",
+      "bytes": 13023,
+      "sha256": "25ee63dd378fd67de58e0dd63a1e0ecbb0f9cf2dfaa1c09998f11f1a55ac7a9e"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-departure-view.mjs",
+      "bytes": 4716,
+      "sha256": "2a939eca53c1108c72df0f85da71204a893c03ef1fe0ddc90d76bc72dd6d9f85"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-dialogue.mjs",
+      "bytes": 7532,
+      "sha256": "a0cf44f20a6bb728aee7fa7b590d4de66f5e16e836709b1ec5b2f62fe405fe71"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-ending-state.mjs",
+      "bytes": 2835,
+      "sha256": "db99c622ef8de1221f11212abc75fec7cdc32cda73d51ea9f1a19352a6e2d117"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-ending.mjs",
+      "bytes": 9132,
+      "sha256": "922219202e532fd4f2e86189a79b4db40e4e759a7156b15bc68397c00d0cd327"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-facilities.mjs",
+      "bytes": 5180,
+      "sha256": "5703deac84582d16c6f3935c34d89b553d62bbf01258f60742166df3b5e249ec"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-fuel.mjs",
+      "bytes": 5492,
+      "sha256": "e32dca7b3936bddbfff8577424b2479ef2a3c25b45cd074df67c56c2bf0f37ec"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-infected.mjs",
+      "bytes": 3666,
+      "sha256": "dacaa6bfdc62ea47eb71d52cd95dd15c5f1f2df64e5b5a178bd6b7fc078d6e4e"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-native.mjs",
+      "bytes": 10004,
+      "sha256": "3da5ad8871a00ef86017120634a205712a2cca09e85439a4e524399f5e9b7ca9"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-population.mjs",
+      "bytes": 3157,
+      "sha256": "4ba32f463723ac63c314d07b337f700a95f625a1403ffe45b7b68bcc9b5e00cc"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-repair-asset.mjs",
+      "bytes": 4528,
+      "sha256": "30972f62217b34f6454741dd288ee51b20e1920abf2d4da9666fc3414caf5796"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-runtime.mjs",
+      "bytes": 8980,
+      "sha256": "6e6aede296c45950c42992e0228e8aeb94a66b69eeaac18e0825d5d8d6697b2f"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-spawns.mjs",
+      "bytes": 4940,
+      "sha256": "b465053834f163786aec62bf914ac8e9caa56aa43f22de835fa08583ed204fa1"
+    },
+    {
+      "path": "scripts/harbor/campaign-ch5-warehouse.mjs",
+      "bytes": 3029,
+      "sha256": "47d0cf94a481952c32b9648302006eff914a67d31aaae6f0063a2d7af8c0c40a"
+    },
+    {
+      "path": "scripts/harbor/campaign-containers.mjs",
+      "bytes": 7266,
+      "sha256": "176bde0aabc6cc273fa38c996b9185be53cd1df658fc961532e633e1abf3779b"
+    },
+    {
+      "path": "scripts/harbor/campaign-dialogue.mjs",
+      "bytes": 8323,
+      "sha256": "fe5efa1bab4dd333ad6897a22b0842ef81e272f8aceb74849c3e3e845e1658be"
+    },
+    {
+      "path": "scripts/harbor/campaign-guard.mjs",
+      "bytes": 12065,
+      "sha256": "1097641dcad80ad3d577271006bb7d7d877c03d29db1a542e947e25e7bf75bc5"
+    },
+    {
+      "path": "scripts/harbor/campaign-layout.mjs",
+      "bytes": 9211,
+      "sha256": "e3f21a79c2ef88e8740435c014549efbbc7d81db2a67300cbd152bf0609ab98c"
+    },
+    {
+      "path": "scripts/harbor/campaign-m1.mjs",
+      "bytes": 7590,
+      "sha256": "a31cff7b6e8e5c00d9e1cf672d88530a0342ca4feb3960fed38387116ff41d78"
+    },
+    {
+      "path": "scripts/harbor/campaign-m2.mjs",
+      "bytes": 35274,
+      "sha256": "6709a8e119c563575dad6a9061ee27b5f8541464732b864d0a32a5e3d3dd204c"
+    },
+    {
+      "path": "scripts/harbor/campaign-patrols.mjs",
+      "bytes": 11138,
+      "sha256": "545fea5d79b71243a159a8abe71f0ef4259cf77a4a29759d06544bbe70bc8210"
+    },
+    {
+      "path": "scripts/harbor/campaign-pickup-asset.mjs",
+      "bytes": 2275,
+      "sha256": "aec566c86cd69edbe91e98bef69cc417e5178ca275e6ad6d13c910542b886493"
+    },
+    {
+      "path": "scripts/harbor/campaign-player-state.mjs",
+      "bytes": 2486,
+      "sha256": "dec2e46da3f69b6897757590d3777b5a694fef3e47d26f28fd0a5ec903739da8"
+    },
+    {
+      "path": "scripts/harbor/campaign-sectors.mjs",
+      "bytes": 27605,
+      "sha256": "4a894ec677eaa71169ca86085218c0e017ec6f8a8fedf14c41860cc26a94a6ae"
+    },
+    {
+      "path": "scripts/harbor/campaign-state.mjs",
+      "bytes": 14483,
+      "sha256": "674137e98ef24d7220cc1b85b261009e2fd8b7271e55cb9f1852394a9b1fa54a"
+    },
+    {
+      "path": "scripts/harbor/campaign-supplies.mjs",
+      "bytes": 8177,
+      "sha256": "746d96561654b9d338e77106b76b8ff86d359af8281ccc9129c9ee0890332790"
+    },
+    {
+      "path": "scripts/harbor/campaign-warehouse.mjs",
+      "bytes": 9252,
+      "sha256": "260b71e5f51b9710aded47762270a307eaeddc6a9c2fa77172ddaab3fe433a4f"
+    },
+    {
+      "path": "scripts/harbor/chapter-director.mjs",
+      "bytes": 1657,
+      "sha256": "2e37026d6431b96b77d5cef8d58bcd278ee353fbe116358a648ca8435d493e2f"
+    },
+    {
+      "path": "scripts/harbor/character-animation.mjs",
+      "bytes": 5495,
+      "sha256": "f1929325045aa31f062e972264b704b2b019af04090417b149d34cdf2fd4ae21"
+    },
+    {
+      "path": "scripts/harbor/character-assets.mjs",
+      "bytes": 18729,
+      "sha256": "5747fb469fc5ab009124869e7b477bb4a67e251f9778d30dffa0a330527e0445"
+    },
+    {
+      "path": "scripts/harbor/character-audio.mjs",
+      "bytes": 9926,
+      "sha256": "8b39c75df19d5b9f12dbbb0bdfa225737b8def4c566d34c853fa9554487a4d88"
+    },
+    {
+      "path": "scripts/harbor/character-clips.mjs",
+      "bytes": 1005,
+      "sha256": "0367752f9cfc33b5d939312657aa6ee88efa7207ca287d42a19c2ab5b34e3d64"
+    },
+    {
+      "path": "scripts/harbor/character-native-target.mjs",
+      "bytes": 8231,
+      "sha256": "d7cf3302763a0e57910f31e95f6a662f6ea89f5a73ae13d567123323aad59213"
+    },
+    {
+      "path": "scripts/harbor/equipment.mjs",
+      "bytes": 17367,
+      "sha256": "ef1fa50761101db6f595ae30860bfda110dce23976c4d6a781274bc3c4d6e073"
+    },
+    {
+      "path": "scripts/harbor/infrastructure-state.mjs",
+      "bytes": 1595,
+      "sha256": "4968a139a522b976a4630e0a3c45c57570e31d4a24d7523bbd182b4dd121add0"
+    },
+    {
+      "path": "scripts/harbor/infrastructure.mjs",
+      "bytes": 13174,
+      "sha256": "b66cf0f8e935098cab8a3324ea917040762b52f9f28c927f0ca13cc250779883"
+    },
+    {
+      "path": "scripts/harbor/knife-asset.mjs",
+      "bytes": 1905,
+      "sha256": "22666c30b9b73e6b67a43410fbc0835938331600436f442ccb153d67aabde288"
+    },
+    {
+      "path": "scripts/harbor/knife-sound.mjs",
+      "bytes": 2034,
+      "sha256": "5bdf1e6a1110b090cd714c64a8ffcbdcfc08368aebbe51ed9a8684514617fca5"
+    },
+    {
+      "path": "scripts/harbor/knife.mjs",
+      "bytes": 7502,
+      "sha256": "0584ef4faebc7d44d256e5ccfd2c61dd11c3bfc087f79366c43c9624513d488f"
+    },
+    {
+      "path": "scripts/harbor/night.mjs",
+      "bytes": 12354,
+      "sha256": "fca04c835e5ab23fc56831978eba65e0b69683e859c68fc618d83a7947187d98"
+    },
+    {
+      "path": "scripts/harbor/opening-narrative.mjs",
+      "bytes": 26863,
+      "sha256": "58f6578f3c1a139741b61d39a536610bb3459b21da67aed168d61918d320224e"
+    },
+    {
+      "path": "scripts/harbor/pistol.mjs",
+      "bytes": 19569,
+      "sha256": "ef6a2044bf8f5b252abe4355875bce1088fb7178c7f708073ae9548ea508183b"
+    },
+    {
+      "path": "scripts/harbor/power-lighting.mjs",
+      "bytes": 9348,
+      "sha256": "33fe7ce1cee47c99945dcd9302bf46cf6ff555339f8acba8a8adc0325956a470"
+    },
+    {
+      "path": "scripts/harbor/reinforcements.mjs",
+      "bytes": 10612,
+      "sha256": "179a04887ea5eb76c3c26cb83e7ed0a6ad04b1a2b0f9efa9c21b8e79e7e17eb7"
+    },
+    {
+      "path": "scripts/release/build-static.mjs",
+      "bytes": 10706,
+      "sha256": "7a6e0d12b13a0275655dccdc5bcc755ef23765915ddae93b8329ed6ead66cc71"
+    },
+    {
+      "path": "几猫国产3A大作_V1-fable5.2.html",
+      "bytes": 1425707,
+      "sha256": "9e55b5200b088adaf8e1152da04efc0d3b25e236e6baf2dee96f81e23e084966"
+    }
+  ]
+}
