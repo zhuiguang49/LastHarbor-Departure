@@ -687,8 +687,8 @@
     },
     {
       "path": "local/chapter-director.mjs",
-      "bytes": 1657,
-      "sha256": "2e37026d6431b96b77d5cef8d58bcd278ee353fbe116358a648ca8435d493e2f"
+      "bytes": 1767,
+      "sha256": "95d2087a4ddad55b1b0abbddfc81a3e9d51bb808600d0bed568959b2ea6ac479"
     },
     {
       "path": "local/character-animation.mjs",
@@ -1444,8 +1444,8 @@
     },
     {
       "path": "scripts/harbor/chapter-director.mjs",
-      "bytes": 1657,
-      "sha256": "2e37026d6431b96b77d5cef8d58bcd278ee353fbe116358a648ca8435d493e2f"
+      "bytes": 1767,
+      "sha256": "95d2087a4ddad55b1b0abbddfc81a3e9d51bb808600d0bed568959b2ea6ac479"
     },
     {
       "path": "scripts/harbor/character-animation.mjs",
