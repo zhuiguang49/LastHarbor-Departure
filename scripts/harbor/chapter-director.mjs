@@ -40,6 +40,7 @@ export function createChapterDirector() {
     state = restored.state
     return restored.runtime
   }
-  // Frame-loop objective reads must not clone the saved 36-actor runtime.
-  return { event, current:()=>copy(state), snapshot, reset, fail, checkpoint, retry }
+  // Mission facts are scalar fields plus flat boolean flags. Keep detached
+  // frame-loop reads without JSON strings; runtime saves still use deep copies.
+  return { event, current:()=>({ ...state,flags:{ ...state.flags } }), snapshot, reset, fail, checkpoint, retry }
 }
