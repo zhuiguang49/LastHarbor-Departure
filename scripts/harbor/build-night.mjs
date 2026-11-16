@@ -70,14 +70,6 @@ function campaignTextEdit(node, name, replacements) {
 function visit(node, scope = '') {
   if (!node || typeof node !== 'object') return
   if (node.type === 'FunctionDeclaration') scope = node.id?.name || scope
-  if (node.type === 'FunctionDeclaration' && node.id?.name === 'zy') {
-    // Radeon APUs need the same starting budget as Intel integrated graphics.
-    // Preserve explicit presets and dedicated Radeon RX mobile GPUs.
-    campaignTextEdit(node, 'integratedGPUQuality', [[
-      '/Intel/i.test(t)&&!/Arc/i.test(t)?Pr.medium:Pr.high',
-      String.raw`(/Intel/i.test(t)&&!/Arc/i.test(t)||/\bRadeon(?:\s*\(TM\)|™)?\s+(?:[678]\d0M\b|Graphics\b)/i.test(t))?Pr.medium:Pr.high`,
-    ]])
-  }
   if (node.type === 'VariableDeclarator' && node.id?.name === 'pE') {
     // Native lights_fragment_begin calls PBR even when the spot contributes
     // zero radiance. Keep all light slots and their original attenuation/shadows;
@@ -305,8 +297,8 @@ function visit(node, scope = '') {
   }
 }
 visit(ast)
-if (campaignEdits.size !== 37) throw Error(`Missing campaign adapters: ${campaignEdits.size}`)
-if (new Set(edits.filter(e => !e.name.startsWith('story.')).map(e => e.name)).size !== 58 || edits.filter(e => e.name === 'identity.menu').length !== 2) throw Error('Ambiguous adaptation boundaries')
+if (campaignEdits.size !== 36) throw Error(`Missing campaign adapters: ${campaignEdits.size}`)
+if (new Set(edits.filter(e => !e.name.startsWith('story.')).map(e => e.name)).size !== 57 || edits.filter(e => e.name === 'identity.menu').length !== 2) throw Error('Ambiguous adaptation boundaries')
 for (const name of new Set(edits.filter(e => !e.name.startsWith('story.')).map(e => e.name))) {
   if (edits.filter(e => e.name === name).length !== (name === 'identity.menu' ? 2 : 1)) throw Error(`Duplicate adapter: ${name}`)
 }
