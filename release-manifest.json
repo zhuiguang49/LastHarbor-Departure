@@ -282,8 +282,8 @@
     },
     {
       "path": "last-harbor-night/index.html",
-      "bytes": 1445395,
-      "sha256": "34527ac4fb18c37b71bc19dc4fd25a6f61879128b2c2756af234a33021bb53e7"
+      "bytes": 1445465,
+      "sha256": "a5d6de18e9cb53c6ad77246bf8c0e5e6e2d019c7fe228871ef3e9793639ab101"
     },
     {
       "path": "local/aftermath-casualties.mjs",
@@ -1069,8 +1069,8 @@
     },
     {
       "path": "scripts/harbor/build-night.mjs",
-      "bytes": 30227,
-      "sha256": "abfa48dfa6d636b57fdf1527835f67e2610e530a31d78ed456e716f360f6c29f"
+      "bytes": 30715,
+      "sha256": "c949a4a29a90ffed930a1907024b71a9afdeba8f94ccb94c426bd58b62b0b3bf"
     },
     {
       "path": "scripts/harbor/campaign-berth5.mjs",
