@@ -8,9 +8,7 @@ English | [简体中文](README.zh-CN.md)
 
 [![Last Harbor: Departure — the game's title screen over a rain-soaked container yard](docs/media/last-harbor-title.jpg)](docs/media/last-harbor-title.png)
 
-**[Play Online](https://lastharbor.zhuiguang.tech/)** · [Run locally](#getting-started) · [Credits](CREDITS.md)
-
-*Online demo: release pending.*
+**[Play Online](https://lastharbor.zhuiguang.tech/)** · [Gameplay video](docs/media/gameplay.mp4) · [Run locally](#getting-started) · [Credits](CREDITS.md)
 
 ## About the game
 

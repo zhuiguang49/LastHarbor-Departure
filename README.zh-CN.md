@@ -8,9 +8,7 @@
 
 [![《末港：今夜离港》实机标题画面：暴雨中的集装箱堆场](docs/media/last-harbor-title.jpg)](docs/media/last-harbor-title.png)
 
-**[在线试玩](https://lastharbor.zhuiguang.tech/)** · [本地运行](#本地运行) · [致谢](CREDITS.md)
-
-*在线试玩：待发布。*
+**[在线试玩](https://lastharbor.zhuiguang.tech/)** · [实机视频](docs/media/gameplay.mp4) · [本地运行](#本地运行) · [致谢](CREDITS.md)
 
 ## 游戏简介
 
