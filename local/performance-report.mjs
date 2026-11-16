@@ -61,13 +61,15 @@ export function installPerformanceReport(g){
    observer.observe({type:'longtask',buffered:false})
   }
   function finish(){
-   running=false;for(const restore of restores.reverse())restore();observer?.disconnect()
+   running=false;for(const restore of restores.reverse())restore();observer?.disconnect();document.removeEventListener('visibilitychange',resetCadence)
    for(const {query}of pending)gl.deleteQuery(query)
-   result={schema:1,startedAt,scope:'15 seconds of foreground gameplay; diagnostic sampling adds some overhead',metadata,qualityAtEnd:{...g.quality},summary:summarizePerformanceFrames(frames),
+   result={schema:1,startedAt,scope:'Up to 15 seconds of foreground gameplay; diagnostic sampling adds some overhead',metadata,qualityAtEnd:{...g.quality},summary:summarizePerformanceFrames(frames),
     longTasks,worstFrames:[...frames].sort((a,b)=>b.interval-a.interval).slice(0,30)}
    start.disabled=false;download.disabled=false
    status.textContent=frames.length?'记录完成。请暂停后下载报告。':'没有采到游玩帧，请继续游戏后重试。'
   }
+  const resetCadence=()=>{previous=null}
+  document.addEventListener('visibilitychange',resetCadence)
   function step(ts){
    if(!running)return
    for(let i=pending.length-1;i>=0;i--){const p=pending[i]
@@ -76,8 +78,9 @@ export function installPerformanceReport(g){
     gl.deleteQuery(p.query);pending.splice(i,1)
    }
    if(playing()&&sample){
-    if(previous!==null){sample.interval=ts-previous;sample.at=ts-began;activeMs+=sample.interval;frames.push(sample)}
-    previous=ts
+    // The next RAF timestamp measures the cadence after the preceding render.
+    if(previous!==null){const frame=previous.frame;frame.interval=ts-previous.ts;frame.at=previous.ts-began;activeMs+=frame.interval;frames.push(frame)}
+    previous={ts,frame:sample}
    }else previous=null
    sample=null
    const second=Math.ceil(Math.max(0,15000-activeMs)/1000)

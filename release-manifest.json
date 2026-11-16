@@ -757,8 +757,8 @@
     },
     {
       "path": "local/performance-report.mjs",
-      "bytes": 6856,
-      "sha256": "3b442def41b616eb4ac06214df252a4b9376880317f166bf123a6473fb710c68"
+      "bytes": 7155,
+      "sha256": "ca1f6e5e8954d0605dd0d67520089571a50a508b2df26cfccd0349ec5cda6af6"
     },
     {
       "path": "local/pistol.mjs",
@@ -1524,8 +1524,8 @@
     },
     {
       "path": "scripts/harbor/performance-report.mjs",
-      "bytes": 6856,
-      "sha256": "3b442def41b616eb4ac06214df252a4b9376880317f166bf123a6473fb710c68"
+      "bytes": 7155,
+      "sha256": "ca1f6e5e8954d0605dd0d67520089571a50a508b2df26cfccd0349ec5cda6af6"
     },
     {
       "path": "scripts/harbor/pistol.mjs",
