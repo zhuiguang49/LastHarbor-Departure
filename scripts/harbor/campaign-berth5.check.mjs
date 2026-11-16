@@ -153,6 +153,26 @@ test('CH1 uses real fixture positions/lenses with battery guides, healthy masts 
   f.world.dispose()
 }))
 
+test('power guide keeps its accepted floor position and illuminates the complete switch panel', () => withCanvas(() => {
+  const f = fixture()
+  try {
+    const site = f.world.lightSites.find(site => site.id === 'berth5-power-guide')
+    const body = f.sources.find(object => object.userData.prop === 'floodlight_stand' &&
+      Math.hypot(object.position.x + 33, object.position.z + 320.5) < .001)
+    assert.ok(body)
+    assert.deepEqual(Array.from(body.position.toArray()), [-33,0,-320.5])
+    const position = new T.Vector3(site.position.x,site.position.y,site.position.z)
+    const forward = new T.Vector3(site.target.x,site.target.y,site.target.z).sub(position).normalize()
+    for (const x of [-.725,.725]) for (const y of [-.26,.26]) {
+      const point = new T.Vector3(CH1.power[0] + x,CH1.power[1] + y,CH1.power[2] + .04)
+      const direction = point.sub(position)
+      assert.ok(direction.length() < site.distance)
+      assert.ok(forward.angleTo(direction) < site.angle - .1, 'Switch panel lies outside the lamp cone')
+    }
+    assert.ok(site.intensity > 0, 'Battery guide remains lit before restoring power')
+  } finally { f.world.dispose() }
+}))
+
 for (const standardLenses of [false,true]) test(`power updates pooled intensity and actual ${standardLenses ? 'Standard' : 'Basic'} lenses, never other sectors`, () => withCanvas(() => {
   const f = fixture({ standardLenses }), environment = f.environment
   const otherSites = f.world.lightSites.filter(site => site.sectorId !== 'berth-5')
