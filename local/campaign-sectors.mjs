@@ -274,7 +274,9 @@ export function buildCampaignSectors(g, { chapter1 = false, chapter2 = false, ch
         ['berth5-booth-guide', -4.8, -321.8, Math.PI],
         ['berth5-power-guide', -33, -320.5, -Math.PI / 3],
       ]) {
-        const fixture = place('berth-5', 'floodlight_stand', x, z, yaw, { seed: 5, on: true })
+        // Keep the stand in place; its native +X beam must face the power control.
+        const facing = id === 'berth5-power-guide' ? Math.atan2(z - CH1.power[2], CH1.power[0] - x) : yaw
+        const fixture = place('berth-5', 'floodlight_stand', x, z, facing, { seed: 5, on: true })
         const site = lightSite(fixture, 'berth-5', fixture.userData.lamps[0], { id, circuit: 'battery', peak: 32 })
         if (id === 'berth5-booth-guide') site.lenses.push(...lenses(booth))
       }

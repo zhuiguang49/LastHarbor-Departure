@@ -667,8 +667,8 @@
     },
     {
       "path": "local/campaign-sectors.mjs",
-      "bytes": 27605,
-      "sha256": "4a894ec677eaa71169ca86085218c0e017ec6f8a8fedf14c41860cc26a94a6ae"
+      "bytes": 27798,
+      "sha256": "935f16d6d0893f86897f7d798b2683f4491029fbe06fc95efa98c9eca176dca3"
     },
     {
       "path": "local/campaign-state.mjs",
@@ -1424,8 +1424,8 @@
     },
     {
       "path": "scripts/harbor/campaign-sectors.mjs",
-      "bytes": 27605,
-      "sha256": "4a894ec677eaa71169ca86085218c0e017ec6f8a8fedf14c41860cc26a94a6ae"
+      "bytes": 27798,
+      "sha256": "935f16d6d0893f86897f7d798b2683f4491029fbe06fc95efa98c9eca176dca3"
     },
     {
       "path": "scripts/harbor/campaign-state.mjs",
