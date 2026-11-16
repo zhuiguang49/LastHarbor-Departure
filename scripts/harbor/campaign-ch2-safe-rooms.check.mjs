@@ -23,7 +23,8 @@ function fixture(){
   const environment=build(native),listeners=new Map(),events={on(k,f){if(!listeners.has(k))listeners.set(k,new Set());listeners.get(k).add(f)},off(k,f){listeners.get(k)?.delete(f)},emit(k,e){for(const f of listeners.get(k)||[])f(e)}}
   let key=false,pressed=false,allowed=true
   const slots={pistol:{owned:true,ammo:4,reserve:0},rifle:{owned:true,ammo:7,reserve:0},knife:{owned:true,ammo:1,reserve:0}},calls=[],commits=[]
-  const equipment={capture:()=>json({slots}),addAmmo(id,amount){calls.push({id,amount});const s=slots[id],delta=Math.min(amount,(id==='pistol'?48:160)-s.reserve);s.reserve+=delta;return delta}}
+  const equipment={capture:()=>json({slots}),addAmmo(id,amount){calls.push({id,amount});const s=slots[id],delta=Math.min(amount,(id==='pistol'?48:160)-s.reserve);s.reserve+=delta;return delta},
+    refill(id){calls.push({id,refill:true});const s=slots[id];if(!s?.owned)return false;const changed=s.ammo!==40||s.reserve!==160;s.ammo=40;s.reserve=160;return changed}}
   const g={...native,events,enemies:{raycast:()=>null},game:{state:'playing',run:{time:0}},time:{frame:1},input:{down:()=>key,pressed:()=>pressed},hud:{setPrompt(){},message(){}},
     player:{pos:v(),eye:v(),vel:v(),forward:v(0,0,-1),health:83,alive:true,enabled:true,onGround:true,crouching:false,damage(n){this.health-=n}}}
   const safe=installChapter2SafeRooms(g,{equipment,canInteract:()=>allowed,onCheckpoint:event=>commits.push({event,state:json(safe.capture()),equipment:equipment.capture(),health:g.player.health})})
@@ -187,10 +188,11 @@ test('normal E controls raise/lower doors, guard a crouched player below the cur
   }finally{f.cleanup()}
 })
 
-test('safe entry requires supported actual feet, stopped motion and live gameplay; ammo is one owned-only capped reserve transaction before callback',()=>{
+test('safe entry requires supported actual feet; all three supplies refill owned rifles before the checkpoint callback',()=>{
   const f=fixture()
   try{
     for(const [index,zone] of CH2_SAFE_ZONES.entries()){
+      f.slots.rifle.ammo=7;f.slots.rifle.reserve=3
       f.place(v(zone.x,.172,zone.z));f.g.player.vel.x=1;f.tick(0);assert.equal(f.safe.capture().rooms[index].entered,false)
       f.g.player.vel.set(0,0,0);f.g.player.onGround=false;f.tick(0);assert.equal(f.safe.capture().rooms[index].entered,false)
       f.g.player.onGround=true;f.g.player.pos.y=0;f.tick(0);assert.equal(f.safe.capture().rooms[index].entered,false)
@@ -198,26 +200,27 @@ test('safe entry requires supported actual feet, stopped motion and live gamepla
       const station=v(...f.safe.snapshot().rooms[index].station);f.place(v(zone.x,.172,zone.z),{facing:station})
       assert.equal(f.press(),true);assert.equal(f.press(),false)
       const expected=[12,30,42][index];assert.equal(f.slots.pistol.reserve,expected)
-      assert.equal(f.slots.pistol.ammo,4);assert.equal(f.slots.rifle.ammo,7);assert.equal(f.g.player.health,83)
+      assert.equal(f.slots.pistol.ammo,4);assert.deepEqual(f.slots.rifle,{owned:true,ammo:40,reserve:160},zone.id);assert.equal(f.g.player.health,83)
       const callback=f.commits.at(-1)
       assert.deepEqual(callback.event,{kind:'ammo',id:zone.id});assert.equal(callback.state.rooms[index].consumed,true);assert.equal(callback.equipment.slots.pistol.reserve,expected)
+      assert.deepEqual(callback.equipment.slots.rifle,{owned:true,ammo:40,reserve:160})
       assert.equal(f.safe.snapshot().rooms[index].pickupVisible,false)
       const saved=json(f.safe.capture()),before=json(f.slots),calls=f.calls.length,commits=f.commits.length
       f.safe.restore(saved);f.safe.restore(saved);assert.deepEqual(f.slots,before);assert.equal(f.calls.length,calls);assert.equal(f.commits.length,commits)
       evidence.ammo.push({id:zone.id,callback})
     }
-    assert.equal(f.slots.rifle.reserve,20)
+    assert.equal(f.slots.rifle.reserve,160)
     for(const reserve of [45,48]){
-      f.safe.reset();f.slots.pistol.reserve=reserve;f.slots.rifle.owned=false
+      f.safe.reset();f.slots.pistol.reserve=reserve;Object.assign(f.slots.rifle,{owned:false,ammo:7,reserve:20})
       const z=CH2_SAFE_ZONES[2];f.place(v(z.x,.172,z.z));f.tick(0);f.place(f.g.player.pos,{facing:v(...f.safe.snapshot().rooms[2].station)})
-      assert.equal(f.press(),true);assert.equal(f.slots.pistol.reserve,48);assert.equal(f.slots.rifle.reserve,20);assert.equal(f.safe.capture().rooms[2].consumed,true)
+      assert.equal(f.press(),true);assert.equal(f.slots.pistol.reserve,48);assert.deepEqual(f.slots.rifle,{owned:false,ammo:7,reserve:20});assert.equal(f.safe.capture().rooms[2].consumed,true)
     }
     for(const reserve of [155,160]){
       f.safe.reset();f.slots.rifle.owned=true;f.slots.rifle.reserve=reserve
       const z=CH2_SAFE_ZONES[2];f.place(v(z.x,.172,z.z));f.tick(0);f.place(f.g.player.pos,{facing:v(...f.safe.snapshot().rooms[2].station)})
-      assert.equal(f.press(),true);assert.equal(f.slots.rifle.reserve,160);assert.equal(f.slots.rifle.ammo,7)
+      assert.equal(f.press(),true);assert.equal(f.slots.rifle.reserve,160);assert.equal(f.slots.rifle.ammo,40)
     }
-    f.safe.reset();f.slots.pistol.owned=false;const z=CH2_SAFE_ZONES[0];f.place(v(z.x,.172,z.z));f.tick(0);f.place(f.g.player.pos,{facing:v(...f.safe.snapshot().rooms[0].station)});const count=f.calls.length
+    f.safe.reset();f.slots.pistol.owned=f.slots.rifle.owned=false;const z=CH2_SAFE_ZONES[0];f.place(v(z.x,.172,z.z));f.tick(0);f.place(f.g.player.pos,{facing:v(...f.safe.snapshot().rooms[0].station)});const count=f.calls.length
     assert.equal(f.press(),true);assert.equal(f.calls.length,count);assert.equal(f.slots.pistol.owned,false)
   }finally{f.cleanup()}
 })
@@ -246,7 +249,7 @@ test('illegal E, repeated same-frame calls, held E, behind/wall/range/pause/deat
     const faults=[x=>x.rooms.pop(),x=>x.rooms[2].id=x.rooms[0].id,x=>x.rooms[2].doors.pop(),x=>x.rooms[2].doors[1].id=x.rooms[2].doors[0].id,
       x=>x.rooms[2].doors[1].progress=NaN,x=>x.rooms[2].doors[1].progress=Infinity,x=>x.rooms[2].doors[1].target=2,x=>x.rooms[2].consumed=true,x=>x.rooms[2].doors[1].held=true]
     for(const fault of faults){const bad=json(good);fault(bad);assert.throws(()=>f.safe.restore(bad),/Invalid/);assert.deepEqual(json(f.safe.capture()),good)}
-    f.safe.reset();assert.equal(f.calls.length,1);assert.ok(f.safe.snapshot().rooms.every(r=>!r.entered&&!r.consumed&&r.pickupVisible))
+    f.safe.reset();assert.equal(f.calls.length,2);assert.ok(f.safe.snapshot().rooms.every(r=>!r.entered&&!r.consumed&&r.pickupVisible))
   }finally{f.cleanup()}
 })
 
