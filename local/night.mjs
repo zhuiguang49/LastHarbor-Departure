@@ -207,15 +207,9 @@ try {
   throw error
 }
 window.__lastHarborCampaign.chapter5.battle.warmup()
-const { installRenderMatrixCache } = await import('./render-matrices.mjs')
-installRenderMatrixCache(g)
 document.documentElement.classList.remove('harbor-loading')
 const boot = document.getElementById('boot')
 boot.hidden = true; boot.style.display = 'none'
 const pendingStart = window.__lastHarborPendingStart
 delete window.__lastHarborPendingStart
 pendingStart?.()
-if (window.location?.search && new URLSearchParams(window.location.search).get('diagnostics') === '1') {
-  const { installPerformanceReport } = await import('./performance-report.mjs')
-  installPerformanceReport(g)
-}
