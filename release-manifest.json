@@ -747,13 +747,18 @@
     },
     {
       "path": "local/night.mjs",
-      "bytes": 12354,
-      "sha256": "fca04c835e5ab23fc56831978eba65e0b69683e859c68fc618d83a7947187d98"
+      "bytes": 12674,
+      "sha256": "c7d6ddb165c854c5bec2bc1065edc10d39095794e90360eed1035196f96fc4e0"
     },
     {
       "path": "local/opening-narrative.mjs",
       "bytes": 26863,
       "sha256": "58f6578f3c1a139741b61d39a536610bb3459b21da67aed168d61918d320224e"
+    },
+    {
+      "path": "local/performance-report.mjs",
+      "bytes": 6856,
+      "sha256": "3b442def41b616eb4ac06214df252a4b9376880317f166bf123a6473fb710c68"
     },
     {
       "path": "local/pistol.mjs",
@@ -769,6 +774,11 @@
       "path": "local/reinforcements.mjs",
       "bytes": 10612,
       "sha256": "179a04887ea5eb76c3c26cb83e7ed0a6ad04b1a2b0f9efa9c21b8e79e7e17eb7"
+    },
+    {
+      "path": "local/render-matrices.mjs",
+      "bytes": 1032,
+      "sha256": "deb717acb9132f0668ed460cbb210a1e2ee93c6b4d0b87297b2c71f5adc917b3"
     }
   ],
   "inputs": [
@@ -1504,13 +1514,18 @@
     },
     {
       "path": "scripts/harbor/night.mjs",
-      "bytes": 12354,
-      "sha256": "fca04c835e5ab23fc56831978eba65e0b69683e859c68fc618d83a7947187d98"
+      "bytes": 12674,
+      "sha256": "c7d6ddb165c854c5bec2bc1065edc10d39095794e90360eed1035196f96fc4e0"
     },
     {
       "path": "scripts/harbor/opening-narrative.mjs",
       "bytes": 26863,
       "sha256": "58f6578f3c1a139741b61d39a536610bb3459b21da67aed168d61918d320224e"
+    },
+    {
+      "path": "scripts/harbor/performance-report.mjs",
+      "bytes": 6856,
+      "sha256": "3b442def41b616eb4ac06214df252a4b9376880317f166bf123a6473fb710c68"
     },
     {
       "path": "scripts/harbor/pistol.mjs",
@@ -1526,6 +1541,11 @@
       "path": "scripts/harbor/reinforcements.mjs",
       "bytes": 10612,
       "sha256": "179a04887ea5eb76c3c26cb83e7ed0a6ad04b1a2b0f9efa9c21b8e79e7e17eb7"
+    },
+    {
+      "path": "scripts/harbor/render-matrices.mjs",
+      "bytes": 1032,
+      "sha256": "deb717acb9132f0668ed460cbb210a1e2ee93c6b4d0b87297b2c71f5adc917b3"
     },
     {
       "path": "scripts/release/build-static.mjs",
