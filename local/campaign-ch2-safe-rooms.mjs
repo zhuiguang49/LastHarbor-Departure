@@ -50,7 +50,7 @@ export function installChapter2SafeRooms(g,{equipment,onCheckpoint=()=>{},canInt
       mesh([.17,.105,.14],dark,[x,1.015,-.94],pickup)
       mesh([.175,.012,.145],steel,[x,1.074,-.94],pickup)
     }
-    label(`P12 +${ammo[index]}${index===2?' · 已持步枪 +20':''} · 一次领取`,[0,1.32,-1.06],0,station,1.65)
+    label(`P12 +${ammo[index]} · 已持步枪补满 · 一次领取`,[0,1.32,-1.06],0,station,1.65)
     station.updateMatrixWorld(true)
     const bounds=new T.Box3(new T.Vector3(-.32,.92,-1.108),new T.Vector3(.32,1.28,-1.072)).applyMatrix4(station.matrixWorld)
     handles.push(g.physics.addBox(bounds.min,bounds.max,{surface:'metal',tag:`${zone.id}.shelf`}))
@@ -137,11 +137,11 @@ export function installChapter2SafeRooms(g,{equipment,onCheckpoint=()=>{},canInt
     if(!active())return false
     const room=rooms.find(room=>!room.consumed&&isSafe(g.player.pos)&&contains(g.player.pos)===room.zone.id&&nearby(room.station))
     if(room){
-      g.hud.setPrompt('领取一次性备用弹药')
+      g.hud.setPrompt('领取一次性弹药补给')
       if(!pressed || !room.entered)return false
       const slots=equipment.capture().slots
       if(slots.pistol?.owned)equipment.addAmmo('pistol',room.pistolAmmo)
-      if(room===rooms[2]&&slots.rifle?.owned)equipment.addAmmo('rifle',20)
+      if(slots.rifle?.owned)equipment.refill('rifle')
       room.consumed=true;room.pickup.visible=false;g.hud.setPrompt(null)
       // Reward and physical disappearance precede the host's complete commit.
       onCheckpoint({kind:'ammo',id:room.zone.id});return true

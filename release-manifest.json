@@ -377,8 +377,8 @@
     },
     {
       "path": "local/campaign-ch2-safe-rooms.mjs",
-      "bytes": 15058,
-      "sha256": "e4e8468b677b0cf4217a2eea74b6091096e72e54a3ae87ab97b151bc513766f6"
+      "bytes": 15021,
+      "sha256": "7837c1fae05350fe00062350c98f8998e77e09487fc8051a7796c5734d32e3a8"
     },
     {
       "path": "local/campaign-ch3-ammo.mjs",
@@ -1134,8 +1134,8 @@
     },
     {
       "path": "scripts/harbor/campaign-ch2-safe-rooms.mjs",
-      "bytes": 15058,
-      "sha256": "e4e8468b677b0cf4217a2eea74b6091096e72e54a3ae87ab97b151bc513766f6"
+      "bytes": 15021,
+      "sha256": "7837c1fae05350fe00062350c98f8998e77e09487fc8051a7796c5734d32e3a8"
     },
     {
       "path": "scripts/harbor/campaign-ch3-ammo.mjs",
